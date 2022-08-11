@@ -19,6 +19,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .botonClase {
+                background-color: blue;
+            }
         </style>
     </head>
     <body class="antialiased">
