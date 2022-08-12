@@ -1,1 +1,5 @@
-<p>Footer</p>
+<div class="row">
+    <div class="col-md">
+        
+    </div>
+</div>
