@@ -3,7 +3,7 @@
     <head>
         @yield('imports', View('imports'))
         
-        <title>Laravel</title>        
+        <title>Laravel</title>
 
         <style>
             body {
@@ -14,7 +14,7 @@
     <body class="antialiased">
         @yield('menu', View('menu'))
 
-        <p>Contenido</p>
+        <p>Vista Registro</p>
 
         @yield('footer', View('footer'))
     </body>
