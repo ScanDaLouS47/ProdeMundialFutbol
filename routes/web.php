@@ -20,3 +20,31 @@ Route::get('/', function () {
 Route::get('/registro', function () {
     return view('registro');
 });
+
+Route::get('/entrar', function () {
+    return view('entrar');
+});
+
+Route::get('/registro', function () {
+    return view('registro');
+});
+
+Route::get('/prode', function () {
+    return view('prode');
+});
+
+Route::get('/fixture', function () {
+    return view('fixture');
+});
+
+Route::get('/ranking', function () {
+    return view('ranking');
+});
+
+Route::get('/perfil', function () {
+    return view('perfil');
+});
+
+Route::get('*', function () {
+    return view('not_found');
+});
