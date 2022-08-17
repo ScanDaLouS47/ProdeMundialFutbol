@@ -1,10 +1,26 @@
 * {
     overflow-x:hidden;
+    overflow-y: hidden;
     margin:0;
     padding: 0;    
 }
+
+/* IMPORTANTE : Arreglando el maldito espaciado de la derecha */
+.col{
+margin-left: 0 !important;
+margin-right: 0 !important;
+  }
+  
+.row{
+margin-left: 0 !important;
+margin-right: 0 !important;
+}
+
+/* //////////////////////////////////////////////////// */
+
 body {
     font-family: 'Nunito', sans-serif;
+    width: 100%;
 }
 
 a {
@@ -42,12 +58,16 @@ a {
 .styloFooter{    
     bottom: 0;
     position: fixed;
-    width: 120%;    
+    width: 100%;    
     min-height: 300px;
 }
 .colorfooter{
     background-color: #5D6D7E;
 }
 .textoFooter{
-    color: #7C1838;
+    color: #f3f3f5;
 }
+.textoFooter:hover{
+    color: #f3f3f5;
+}
+

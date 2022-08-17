@@ -9,6 +9,7 @@
     </head>
     <body class="antialiased">        
         @yield('menu', View('menu'))        
+        
         <div class="row">
             <p>Contenido</p>
         </div>
