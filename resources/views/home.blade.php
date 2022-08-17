@@ -3,18 +3,15 @@
     <head>
         @yield('imports', View('imports'))
         
-        <title>Laravel</title>        
+        <title>ProdeMundial</title>        
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
+        
     </head>
-    <body class="antialiased">
-        @yield('menu', View('menu'))
-
-        <p>Contenido</p>
+    <body class="antialiased">        
+        @yield('menu', View('menu'))        
+        <div class="row">
+            <p>Contenido</p>
+        </div>
 
         @yield('footer', View('footer'))
     </body>
