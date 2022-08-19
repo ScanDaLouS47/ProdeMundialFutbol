@@ -1,6 +1,5 @@
 * {
-    overflow-x:hidden;
-    overflow-y: hidden;
+    
     margin:0;
     padding: 0;    
 }
@@ -21,6 +20,8 @@ margin-right: 0 !important;
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
+    overflow-x:hidden;
+    overflow-y: auto;
 }
 
 a {
@@ -56,9 +57,9 @@ a {
 }
 
 .styloFooter{    
-    bottom: 0;
-    position: fixed;
-    width: 100%;    
+    bottom: 0;    
+    position: relative; 
+    width: 100%;     
     min-height: 300px;
 }
 .colorfooter{
@@ -71,3 +72,18 @@ a {
     color: #f3f3f5;
 }
 
+.textologin{
+    color: #f3f3f5;
+    font-family: 'Rubik', sans-serif;
+}
+.botonLogin{
+    background-color: #7C1838;
+}
+
+.fondoLogin{
+    background-image: url("../img/mundial.jpg");
+    background-color: #F3F3F5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

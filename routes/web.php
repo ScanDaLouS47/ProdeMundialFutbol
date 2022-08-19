@@ -21,8 +21,8 @@ Route::get('/registro', function () {
     return view('registro');
 });
 
-Route::get('/entrar', function () {
-    return view('entrar');
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/registro', function () {

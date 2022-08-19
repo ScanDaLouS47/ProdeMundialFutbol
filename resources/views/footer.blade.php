@@ -8,7 +8,7 @@
         <br>
         <div class="row">
           <div class="col-md-4">
-            <a class="textoFooter "  href=""> <img class="margenMenu" src="img/botonMail.png" >Hectorarguello.prat@gmail.com  </a> 
+            <a class="textoFooter "  href=""> <img class="margenMenu" src="img/botonMail.png" >Hectorarguello.prac@gmail.com  </a> 
             <br>
             <a class="textoFooter "  href="https://web.whatsapp.com/"> <img class="margenMenu" src="img/botonWs.png" >+54 9 3571 56-2946</a>
             <br>
