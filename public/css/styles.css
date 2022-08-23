@@ -74,6 +74,7 @@ a {
 
 .textologin{
     color: #f3f3f5;
+    font-weight: bold;
     font-family: 'Rubik', sans-serif;
 }
 .botonLogin{
@@ -86,4 +87,19 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 30em;    
+}
+.fondoFormulario{
+    background-color: #7C1838;
+    padding: 5%;
+    border: 4px;
+    border-color: #f3f3f3;
+    border-style: solid;
+    opacity: 0.8;
+}
+
+.textologin:hover{
+    color: #F3F3F5;
+    text-decoration: underline;
+    font-weight: bold;
 }

@@ -13,28 +13,32 @@
         <div class="row fondoLogin">
             <div class="col-md"></div>
             <div class="col-md-6"> 
+              <br>
+              <div class="fondoFormulario">
                 <form>
-                    <div class="form-group textologin">
-                      <label for="exampleInputEmail1">Nombre Completo</label>
-                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="ingrese su nombre completo" required>
-                    </div>
+                    
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Dni</label>
-                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required>
+                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required autocomplete="false">
                       </div>
-                      <div class="form-group textologin">
-                        <label for="exampleInputPassword1">Telefono</label>
-                        <input type="Telefono" class="form-control" id="telefono" name="telefono" placeholder="ingrese su telefono">
-                      </div>
+                      
                       <div  class="form-group textologin">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña">
-                      </div>
-                      <br>
-                      <div class="form-group">
-                        <button style="background-color: #7C1838;" type="submit" class="btn btn-block">Crear Usuario</button>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña" required>
                       </div>
                   </form>
+                  <div class="row">
+                    <button class="btn btn-block btn-primary">Entrar</button>
+                  </div>
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col-8 offset-md-8 col-md-4">
+                      <a class="textologin" href="">Olvide mi contraseña</a>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                  
+              </div>
             </div>
             <div class="col-md"></div>            
         </div>
