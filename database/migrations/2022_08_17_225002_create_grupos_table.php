@@ -15,8 +15,16 @@ return new class extends Migration
     {
         Schema::create('grupos', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_primer_puesto');
-            $table->integer('id_segundo_puesto');
+            $table->unsignedBigInteger('id_primer_puesto')->nullable();
+            $table->unsignedBigInteger('id_segundo_puesto')->nullable();
+
+            $table->foreign('id_primer_puesto')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
+
+            $table->foreign('id_segundo_puesto')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
         });
     }
 

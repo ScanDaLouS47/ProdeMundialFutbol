@@ -17,9 +17,22 @@ return new class extends Migration
             $table->id();
             $table->date('fecha');
             $table->string('hora');
-            $table->integer('id_equipo_1');
-            $table->integer('id_equipo_2');
-            $table->integer('id_estadio');
+            $table->unsignedBigInteger('id_equipo_1')->nullable();
+            $table->unsignedBigInteger('id_equipo_2')->nullable();
+            $table->unsignedBigInteger('id_estadio')->nullable();
+
+            $table->foreign('id_equipo_1')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
+
+            $table->foreign('id_equipo_2')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
+
+            $table->foreign('id_estadio')
+                    ->references('id')->on('estadios')
+                    ->onDelete('set null');
+            
         });
     }
 

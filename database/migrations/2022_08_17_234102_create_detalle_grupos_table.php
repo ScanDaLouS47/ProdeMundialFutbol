@@ -15,11 +15,27 @@ return new class extends Migration
     {
         Schema::create('detalle_grupos', function (Blueprint $table) {
             $table->id();
-            $table->integer('puntos');
-            $table->integer('id_equipo_1');
-            $table->integer('id_equipo_2');
-            $table->integer('id_usuario');
-            $table->integer('id_grupo');
+            $table->unsignedBigInteger('puntos')->nullable();
+            $table->unsignedBigInteger('id_equipo_1')->nullable();
+            $table->unsignedBigInteger('id_equipo_2')->nullable();
+            $table->unsignedBigInteger('id_usuario')->nullable();
+            $table->unsignedBigInteger('id_grupo')->nullable();
+
+            $table->foreign('id_equipo_1')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
+
+            $table->foreign('id_equipo_2')
+                    ->references('id')->on('equipos')
+                    ->onDelete('set null');
+
+            $table->foreign('id_usuario')
+                    ->references('id')->on('usuarios')
+                    ->onDelete('set null');
+
+            $table->foreign('id_grupo')
+                    ->references('id')->on('grupos')
+                    ->onDelete('set null');
         });
     }
 

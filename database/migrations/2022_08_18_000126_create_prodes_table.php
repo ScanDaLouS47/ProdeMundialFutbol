@@ -18,7 +18,11 @@ return new class extends Migration
             $table->date('fecha_carga')->nullable(false);
             $table->date('fecha_aprovacion');
             $table->integer('estado');
-            $table->integer('id_usuario');
+            $table->unsignedBigInteger('id_usuario')->nullable();
+
+            $table->foreign('id_usuario')
+                    ->references('id')->on('usuarios')
+                    ->onDelete('set null');
         });
     }
 

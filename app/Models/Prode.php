@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Prode extends Model
 {
     use HasFactory;
+
+    public function usuario(){
+        return $this->belongsTo('App\Models\Usuario');
+    }
 }
