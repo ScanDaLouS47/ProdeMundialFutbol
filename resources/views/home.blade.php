@@ -39,7 +39,7 @@
                     INFO DEL PROFE Y SU FUNCIONAMIENTO: 
                      <hr>
                      Para empezar debes registrarte y pedir tu prode despues de pagarlo.
-                     Ya teniendo tu PRODE puede marcar en cada casillero si algunos de los 2 equipos en disputa gana el partido , pierde o empata;
+                     Ya teniendo tu PRODE puede marcar en cada partido a disputar si algunos de los 2 equipos en disputa gana el partido , pierde o empata;
                      tambien puedes agregar algun resultado a tu parecer como en el ejemplo acontinuacion.
                     <hr>
                      ARGENTINA 2
@@ -49,8 +49,11 @@
                      POLONIA    1
                      <br>
                      Si aciertas el ganador ,perdedor o un empate ganaras 3 pts , pero si acierta el resultado que agregaste ganas total 5 pts por partido.
-                     tendras que ver luego de cada partido en que puesto estas en la tabla de posiciones.
-                     
+                     Luego de cada partido tendras que ver en que puesto estas en la tabla de posiciones.
+                     <br>
+                     tambien podes elegir los equipos que salgan primero y segundo de cada grupo para una posible segunda etapa.
+
+
                 </div>
         </div>
 
