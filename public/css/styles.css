@@ -103,3 +103,10 @@ a {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.textohome{
+    color:#7C1838; ;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
