@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Usuario extends Model
 {
     use HasFactory;
+
+    // Relacion uno a muchos
+    public function prodes(){
+        return $this->hasMany('App\Models\Prode');
+    }
+
+    public function detalles_grupos(){
+        return $this->hasMany('App\Models\DetalleProde');
+    }
 }
