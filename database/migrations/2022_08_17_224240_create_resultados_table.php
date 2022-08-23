@@ -17,6 +17,11 @@ return new class extends Migration
             $table->id();
             $table->integer('goles_equipo_1');
             $table->integer('goles_equipo_2');
+            $table->unsignedBigInteger('id_partido')->nullable();
+
+            $table->foreign('id_partido')
+                    ->references('id')->on('partidos')
+                    ->onDelete('set null');
         });
     }
 

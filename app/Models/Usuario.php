@@ -14,7 +14,11 @@ class Usuario extends Model
         return $this->hasMany('App\Models\Prode');
     }
 
-    public function detalles_grupos(){
+    public function detalle_grupo(){
         return $this->hasMany('App\Models\DetalleProde');
+    }
+
+    public function tipo_usuario(){
+        return $this->belongsTo('App\Models\TipoUsuario');
     }
 }

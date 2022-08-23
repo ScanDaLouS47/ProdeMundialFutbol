@@ -16,16 +16,11 @@ return new class extends Migration
         Schema::create('detalle_prodes', function (Blueprint $table) {
             $table->id();
             $table->integer('puntos');
-            $table->unsignedBigInteger('id_prode')->nullable();
-            $table->unsignedBigInteger('id_partido')->nullable();
+            $table->unsignedBigInteger('id_prode')->nullable();            
             $table->unsignedBigInteger('id_resultado')->nullable();            
 
             $table->foreign('id_prode')
                     ->references('id')->on('prodes')
-                    ->onDelete('set null');
-
-            $table->foreign('id_partido')
-                    ->references('id')->on('partidos')
                     ->onDelete('set null');
 
             $table->foreign('id_resultado')
