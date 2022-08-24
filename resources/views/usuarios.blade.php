@@ -15,6 +15,10 @@
                 <li>{{ $usuario->nombre }}</li>
             @endforeach
         </ul>
+        @if(session('resp'))
+            <p>El mensaje es : {{ session('message') }}</p>        
+        @endif
+                
 
         @yield('footer', View('footer'))
     </body>

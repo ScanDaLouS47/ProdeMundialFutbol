@@ -16,35 +16,31 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/registro', function () {
+Route::get('registro', function () {
     return view('registro');
-});
+})->name('registro');
 
-Route::get('/login', function () {
+Route::get('login', function () {
     return view('login');
-});
+})->name('login');
 
-Route::get('/registro', function () {
-    return view('registro');
-});
-
-Route::get('/prode', function () {
+Route::get('prode', function () {
     return view('prode');
-});
+})->name('prode');
 
-Route::get('/fixture', function () {
+Route::get('fixture', function () {
     return view('fixture');
-});
+})->name('fixture');
 
-Route::get('/ranking', function () {
+Route::get('ranking', function () {
     return view('ranking');
-});
+})->name('ranking');
 
-Route::get('/perfil', function () {
+Route::get('perfil', function () {
     return view('perfil');
-});
+})->name('perfil');
 
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 
@@ -53,4 +49,4 @@ Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.sto
 
 Route::get('*', function () {
     return view('not_found');
-});
+})->name('not_found');

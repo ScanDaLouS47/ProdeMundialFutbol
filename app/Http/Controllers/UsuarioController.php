@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class UsuarioController extends Controller
 {
 
-    public function index(){
+    public function index(){        
         $usuarios = Usuario::orderBy('id', 'desc')->paginate();
         return view('usuarios', compact('usuarios'));
     }
@@ -23,9 +23,12 @@ class UsuarioController extends Controller
         $usuario->puntaje = 0;
         $usuario->estado = 1;
         
-        $usuario->save();
+        // $message = 'asd';
+        $usuario->save() ? $resp = 'ok' : $resp = 'not';
+         
+        ($resp === 'ok') ? $message = 'El usuario se registro correctamente.' : $message = 'El usuario no se registro correctamente.';
 
-        return redirect()->route('usuarios.index');
+        return redirect()->route('login')->with('message',$message)->with('resp',$resp);
     }
 
     public function create(){
