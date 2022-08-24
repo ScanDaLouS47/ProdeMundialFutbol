@@ -105,8 +105,15 @@ a {
 }
 
 .textohome{
-    color:#7C1838; ;
+    font-family: 'Cantarell', sans-serif;
+    color: #8c183d ; 
+    font-weight: bold;
+}
+.tituloshome{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Rubik Marker Hatch', cursive;
+    color: #7C1838;
     text-decoration: underline;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 }
