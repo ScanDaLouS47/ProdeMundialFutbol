@@ -15,7 +15,8 @@
             <div class="col-md-6"> 
               <br>
               <div class="fondoFormulario">
-                <form>
+                <form action="{{route('usuarios.store')}}" method="POST">
+                    @csrf
                     <div class="form-group textologin">
                       <label for="exampleInputEmail1">Nombre Completo</label>
                       <input type="text" class="form-control" id="nombre" name="nombre" placeholder="ingrese su nombre completo" required>

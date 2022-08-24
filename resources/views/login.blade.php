@@ -42,7 +42,6 @@
             </div>
             <div class="col-md"></div>            
         </div>
-        
 
             
         @yield('footer', View('footer'))
