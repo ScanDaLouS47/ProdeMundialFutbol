@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,6 +45,11 @@ Route::get('/ranking', function () {
 Route::get('/perfil', function () {
     return view('perfil');
 });
+
+Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
+
+Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
+
 
 Route::get('*', function () {
     return view('not_found');
