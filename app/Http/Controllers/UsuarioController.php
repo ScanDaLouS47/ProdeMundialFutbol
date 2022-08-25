@@ -24,11 +24,9 @@ class UsuarioController extends Controller
         $usuario->estado = 1;
         
         // $message = 'asd';
-        $usuario->save() ? $resp = 'ok' : $resp = 'not';
-         
-        ($resp === 'ok') ? $message = 'El usuario se registro correctamente.' : $message = 'El usuario no se registro correctamente.';
+        $usuario->save() ? $resp = 'ok' : $resp = 'not';                 
 
-        return redirect()->route('login')->with('message',$message)->with('resp',$resp);
+        return redirect()->route('login')->with('resp',$resp);
     }
 
     public function create(){
