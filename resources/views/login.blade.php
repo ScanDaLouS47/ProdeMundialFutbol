@@ -79,6 +79,11 @@
             </script>
             @endif
         @endif
+        @if(session('message'))
+            <script>
+              Swal.fire('<?= session("message"); ?>');
+            </script>
+        @endif
 
             
         @yield('footer', View('footer'))

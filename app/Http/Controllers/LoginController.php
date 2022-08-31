@@ -16,7 +16,8 @@ class LoginController extends Controller
             if($usuario){
                 return redirect()->route('home');  
             }else{
-                echo 'NO HIZO MATCH';            
+                $message = 'El dni o contraseña no son correctos';
+                return redirect()->route('login')->with('message', $message);
             }   
             // return redirect()->route('home');  
         } catch (\Throwable $th) {
