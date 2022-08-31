@@ -19,19 +19,19 @@
                     @csrf
                     <div class="form-group textologin">
                       <label for="exampleInputEmail1">Nombre Completo</label>
-                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="ingrese su nombre completo" required>
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="ingrese su nombre completo" required autocomplete="off">
                     </div>
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Dni</label>
-                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required>
+                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required autocomplete="off">
                       </div>
                       <div class="form-group textologin">
                         <label for="exampleInputPassword1">Telefono</label>
-                        <input type="Telefono" class="form-control" id="telefono" name="telefono" placeholder="ingrese su telefono">
+                        <input type="Telefono" class="form-control" id="telefono" name="telefono" placeholder="ingrese su telefono" autocomplete="off">
                       </div>
                       <div  class="form-group textologin">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña" autocomplete="off">
                       </div>
                       <br>
                       <div class="form-group">

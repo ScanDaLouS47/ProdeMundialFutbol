@@ -19,12 +19,12 @@
                     @csrf
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Dni</label>
-                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required autocomplete="false">
+                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su dni" required autocomplete="off">
                       </div>
                       
                       <div  class="form-group textologin">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña" required>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="ingrese su contraseña" required autocomplete="off">
                       </div>                  
                   <div class="row">
                     <button type="submit" class="btn btn-block btn-primary">Entrar</button>
