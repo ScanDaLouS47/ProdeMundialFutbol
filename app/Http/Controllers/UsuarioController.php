@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Usuario;
@@ -19,7 +18,7 @@ class UsuarioController extends Controller
         $usuario->nombre = $req->nombre;
         $usuario->dni = $req->dni;
         $usuario->telefono = $req->telefono;
-        $usuario->password = $req->password;
+        $usuario->password = md5($req->password);
         $usuario->puntaje = 0;
         $usuario->estado = 1;
         
@@ -29,7 +28,9 @@ class UsuarioController extends Controller
         return redirect()->route('login')->with('resp',$resp);
     }
 
-    public function create(){
-
+    public function login(Request $req){
+        $usuario = Usuario::where('dni', $req->dni)->where('password', md5($req->password))->first();        
+        echo var_dump($usuario);
+        // return redirect()->route('prode');              
     }
 }

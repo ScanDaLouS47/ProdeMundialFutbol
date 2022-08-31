@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,8 @@ Route::get('perfil', function () {
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
+
+Route::post('login', [LoginController::class, 'index'])->name('login.index');
 
 
 Route::get('*', function () {
