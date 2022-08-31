@@ -117,3 +117,10 @@ a {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.partidosProde{
+    font-size: 22px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#f3f3f3  ; 
+    font-weight: bold;
+}
