@@ -2,6 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @yield('imports', View('imports'))
+
+        <script>
+            AOS.init();
+        </script>
         
         <title>ProdeMundial</title>        
 
@@ -10,7 +14,7 @@
     <body class="antialiased">        
         @yield('menuhome', View('menuhome'))        
         
-        <div class="row">
+        <div class="row" data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".row">
             <div class="col-md-5">
              <p class=" textohome">
             La Copa Mundial de Fútbol de la FIFA Catar 2022,
