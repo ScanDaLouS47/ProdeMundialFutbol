@@ -43,6 +43,10 @@ Route::get('perfil', function () {
     return view('perfil');
 })->name('perfil');
 
+Route::get('olvidepass', function () {
+    return view('olvidepass');
+})->name('olvidepass');
+
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
