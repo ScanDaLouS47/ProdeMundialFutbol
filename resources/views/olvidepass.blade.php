@@ -24,12 +24,23 @@
                       </div>
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Nueva contraseña</label>
-                        <input type="password" class="form-control" id="nuevaPass" name="nuevaPass" placeholder="ingrese su contraseña" required autocomplete="off">
+                        <div class="input-group mb-3">
+                          <input type="password" class="form-control" id="nuevaPass" name="nuevaPass" placeholder="ingrese su contraseña" required autocomplete="off">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye"></i></span>
+                          </div>
+                        </div>
                       </div>
                       
                       <div  class="form-group textologin">
                         <label for="exampleInputPassword1">Repita su contraseña</label>
-                        <input type="password" class="form-control" id="nuevaPass2" name="nuevapass2" placeholder="repita su contraseña" required autocomplete="off">
+                        <div class="input-group mb-3">
+                          <input type="password" class="form-control" id="nuevaPass2" name="nuevapass2" placeholder="repita su contraseña" required autocomplete="off">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye"></i></span>
+                          </div>
+                        </div>
+                        
                       </div>                  
                   <div class="row">
                     <button type="submit" class="btn btn-block btn-primary">Cambiar contraseña</button>
