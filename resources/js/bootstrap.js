@@ -12,8 +12,8 @@ window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-import Aos from 'aos';
-window.Aos = Aos;
+// import Aos from 'aos';
+// window.Aos = Aos;
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
