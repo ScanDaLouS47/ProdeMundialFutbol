@@ -47,6 +47,11 @@ Route::get('olvidepass', function () {
     return view('olvidepass');
 })->name('olvidepass');
 
+Route::get('vistaprode', function () {
+    return view('vistaprode');
+})->name('vistaprode');
+
+
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
