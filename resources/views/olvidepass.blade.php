@@ -27,7 +27,7 @@
                         <div class="input-group mb-3">
                           <input type="password" class="form-control" id="nuevaPass" name="nuevaPass" placeholder="ingrese su contraseña" required autocomplete="off">
                           <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye"></i></span>
+                            <span class="input-group-text" id="basic-addon2" onClick="verPass()"><i class="fa fa-eye" id="iconoEye"></i></span>
                           </div>
                         </div>
                       </div>
@@ -37,7 +37,7 @@
                         <div class="input-group mb-3">
                           <input type="password" class="form-control" id="nuevaPass2" name="nuevapass2" placeholder="repita su contraseña" required autocomplete="off">
                           <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-eye"></i></span>
+                            <span class="input-group-text" id="basic-addon2" onClick="verPass()"><i class="fa fa-eye" id="iconoEye2"></i></span>
                           </div>
                         </div>
                         
