@@ -33,7 +33,7 @@
                 <div class="row">
                   <div class="col"></div>
                   <div class="col-8 offset-md-8 col-md-4">
-                    <a class="textologin" href="">Olvide mi contraseña</a>
+                    <a class="textologin" href="{{route('olvidepass')}}">Olvide mi contraseña</a>
                   </div>
                   <div class="col"></div>
                 </div>                  

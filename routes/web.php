@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\OlvidePassController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +47,8 @@ Route::get('perfil', function () {
 Route::get('olvidepass', function () {
     return view('olvidepass');
 })->name('olvidepass');
+
+Route::post('olvidepass', [OlvidePassController::class, 'olvidepass'])->name('olvidepass');
 
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
 

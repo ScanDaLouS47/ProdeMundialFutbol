@@ -15,12 +15,12 @@
             <div class="col-md-6"> 
               <br>
               <div class="fondoFormulario">
-                <form action = "{{route('login.index')}}" method="POST">
+                <form action = "{{route('olvidepass')}}" method="POST">
                     @csrf
 
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Dni</label>
-                        <input type="text" class="form-control" id="dni" name="dni" placeholder="ingrese su DNI" required autocomplete="off">
+                        <input type="number" class="form-control" id="dni" name="dni" placeholder="ingrese su DNI" required autocomplete="off">
                       </div>
                     <div class="form-group textologin">
                         <label for="exampleInputPassword1">Nueva contraseña</label>
