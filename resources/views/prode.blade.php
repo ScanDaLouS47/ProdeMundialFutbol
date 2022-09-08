@@ -10,189 +10,553 @@
     <body class="antialiased">        
         @yield('menuhome', View('menuhome'))  
         <br>
-        <div class="row partidosProde">
-        <div class="col-md-4 bg-primary">Grupo A</div>
-        <div class="col-md"></div>
-        </div> 
-
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md-2 bg-secondary">QATAR</div>
-        <div class="col-md-1 bg-secondary "> <input type="number"></div>
-        <div class="col-md-1 bg-secondary"> <input type="number"></div>
-        <div class="col-md-2 bg-secondary">ECUAROR</div>
-            <br>
-        <div class="col-md "></div>        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-12 bg-primary" style="text-align: center; padding: 10px;">Grupo A</div>                    
+                </div> 
+                <br>
+                <div class="row partidosProde" style="margin-bottom: 12px;">
+                    <div class="col-12 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-6 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-12 col-md-4 bg-secondary" style="text-align: right;">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo B</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
         </div>
         <br>
-        
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-            </div> 
-    
-            <br>
-            <div class="row partidosProde">
-                <div class="col-md-2 bg-secondary">QATAR</div>
-            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-            <div class="col-md-2 bg-secondary">SENEGAL</div>
-                <br>
-            <div class="col-md "></div>        
-            </div>
-
-            <div class="row partidosProde">
-                <div class="col-md"></div>
-                </div> 
-        
-                <br>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="row partidosProde">
-                    <div class="col-md-2 bg-secondary">ECUADOR</div>
-                <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                <div class="col-md-2 bg-secondary">PAISES BAJOS</div>
-                    <br>
-                <div class="col-md "></div>        
-                </div>
-
-                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo A</div>
                     <div class="col-md"></div>
-                    </div> 
-            
-                    <br>
-                    <div class="row partidosProde">
-                        <div class="col-md-2 bg-secondary">QATAR</div>
-                    <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                    <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                    <div class="col-md-2 bg-secondary">PAISES BAJOS</div>
-                        <br>
-                    <div class="col-md "></div>        
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
                     </div>
-
-                    <div class="row partidosProde">
-                        <div class="col-md"></div>
-                        </div> 
-                        <br>
-                        <div class="row partidosProde">
-                            <div class="col-md-2 bg-secondary">ECUADOR</div>
-                        <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                        <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                        <div class="col-md-2 bg-secondary">SENEGAL</div>
-                            <br>
-                        <div class="col-md "></div>        
-                        </div>
-                            <br>
-                        <div class="row partidosProde">
-                            <div class="col-md-4 bg-primary">Grupo B</div>
-                            <div class="col-md"></div>
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">INGLATERRA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">IRAN</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">EE.UU</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">GALES</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">IRAN</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">GALES</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">INGLATERRA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">EE.UU</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">INGLATERRA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">GALES</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">IRAN</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">EE.UU</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-
-                            <div class="row partidosProde">
-                                <div class="col-md-4 bg-primary">Grupo A</div>
-                                <div class="col-md"></div>
-                                </div> 
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">ARGENTINA </div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">ARABIA SAUDITA</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">MEXICO </div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">POLONIA</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">ARABIA SAUDITA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">POLONIA</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">ARGENTINA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">MEXICO</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-                            <br>
-                            <div class="row partidosProde">
-                                <div class="col-md-2 bg-secondary">ARGENTINA</div>
-                            <div class="col-md-1 bg-secondary "> <input type="number"></div>
-                            <div class="col-md-1 bg-secondary"> <input type="number"></div>
-                            <div class="col-md-2 bg-secondary">POLONIA</div>
-                                <br>
-                            <div class="col-md "></div>        
-                            </div>
-
-
-
-
-
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo B</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo A</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo B</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo A</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row partidosProde">
+                    <div class="col-md-4 bg-primary">Grupo B</div>
+                    <div class="col-md"></div>
+                </div> 
+                <br>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+                <div class="row partidosProde">
+                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
+                    <div class="col-2 col-md-2 bg-secondary ">
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-2 col-md-2 bg-secondary"> 
+                        <input type="number" style="width: 100%">
+                    </div>
+                    <div class="col-4 col-md-4 bg-secondary">ECUAROR</div>         
+                </div>
+            </div>
+        </div>
+        <br>
 
         @if(session('resp') == 'ok')
           <script>
