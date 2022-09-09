@@ -124,3 +124,18 @@ a {
     color:#f3f3f3  ; 
     font-weight: bold;
 }
+
+.tituloGrupos{
+    text-align: center; 
+    padding: 10px;
+}
+
+.textoSegundoEquipo{
+    text-align: left;
+}
+
+@media (max-width: 720px) {
+    .textoSegundoEquipo{
+        text-align: right;        
+    }
+  }
