@@ -17,64 +17,100 @@
                 </div> 
                 <br>
                 <div class="row partidosProde" style="margin-bottom: 12px;">
-                    <div class="col-12 col-md-4 bg-secondary">ECUADOR</div>
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/ecuador.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos"> ECUADOR</div>
                     <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
                     <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-12 col-md-4 bg-secondary textoSegundoEquipo">QATAR</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">QATAR</div>  
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/qatar.gif" class="imgBandera">
+                    </div>       
                 </div>
                 <div class="row partidosProde">
-                    <div class="col-4 col-md-4 bg-secondary">SENEGAL</div>
-                    <div class="col-2 col-md-2 bg-secondary ">
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/senegal.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos">SENEGAL</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-2 col-md-2 bg-secondary"> 
+                    <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-4 col-md-4 bg-secondary">PAISES BAJOS</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>    
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/holanda.gif" class="imgBandera">
+                    </div>     
                 </div>
                 <div class="row partidosProde">
-                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
-                    <div class="col-2 col-md-2 bg-secondary ">
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/qatar.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos">QATAR</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-2 col-md-2 bg-secondary"> 
+                    <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-4 col-md-4 bg-secondary">SENEGAL</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">SENEGAL</div>   
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/senegal.gif" class="imgBandera">
+                    </div>      
                 </div>
                 <div class="row partidosProde">
-                    <div class="col-4 col-md-4 bg-secondary">ECUADOR</div>
-                    <div class="col-2 col-md-2 bg-secondary ">
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/ecuador.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos">ECUADOR</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-2 col-md-2 bg-secondary"> 
+                    <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-4 col-md-4 bg-secondary">PAISES BAJOS</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>   
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/holanda.gif" class="imgBandera">
+                    </div>      
                 </div>
                 <div class="row partidosProde">
-                    <div class="col-4 col-md-4 bg-secondary">QATAR</div>
-                    <div class="col-2 col-md-2 bg-secondary ">
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/qatar.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos">QATAR</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-2 col-md-2 bg-secondary"> 
+                    <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-4 col-md-4 bg-secondary">PAISES BAJOS</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>  
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/holanda.gif" class="imgBandera">
+                    </div>       
                 </div>
                 <div class="row partidosProde">
-                    <div class="col-4 col-md-4 bg-secondary">ECUADOR</div>
-                    <div class="col-2 col-md-2 bg-secondary ">
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/ecuador.gif" class="imgBandera">
+                    </div>
+                    <div class="col-10 col-md-3 bg-secondary nombreEquipos">ECUADOR</div>
+                    <div class="col-6 col-md-2 bg-secondary ">
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-2 col-md-2 bg-secondary"> 
+                    <div class="col-6 col-md-2 bg-secondary"> 
                         <input type="number" style="width: 100%">
                     </div>
-                    <div class="col-4 col-md-4 bg-secondary">SENEGAL</div>         
+                    <div class="col-10 col-md-3 bg-secondary textoSegundoEquipo nombreEquipos">SENEGAL</div>  
+                    <div class="col-2 col-md-1 bg-secondary">
+                        <img src="./img/banderas/senegal.gif" class="imgBandera">
+                    </div>       
                 </div>
             </div>
             <div class="col-md-6">

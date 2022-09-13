@@ -123,6 +123,7 @@ a {
     font-family: 'Merriweather Sans', sans-serif;
     color:#f3f3f3  ; 
     font-weight: bold;
+    margin-bottom: 12px;
 }
 
 .tituloGrupos{
@@ -134,8 +135,24 @@ a {
     text-align: left;
 }
 
+.imgBandera{
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 720px) {
     .textoSegundoEquipo{
         text-align: right;        
     }
-  }
+
+    .imgBandera{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nombreEquipos{
+        font-size: 36px;
+    }
+}
