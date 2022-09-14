@@ -3,7 +3,10 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\OlvidePassController;
+use App\Models\Equipo;
+use App\Models\Partido;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +36,14 @@ Route::get('prode', function () {
 })->name('prode');
 
 Route::get('fixture', function () {
-    return view('fixture');
+    $partidos = Partido::all();    
+    // foreach ($partidos as $partido) {
+    //     $equipo1 = Equipo::where('id','=',$partido->id_equipo_1);
+    //     $equipo2 = Equipo::where('id','=',$partido->id_equipo_2);
+    //     $partido->id_equipo_1 = $equipo1->nombre_equipo;
+    //     $partido->id_equipo_2 = $equipo2->nombre_equipo;
+    // }    
+    return view('fixture', ['partidos' => $partidos]);
 })->name('fixture');
 
 Route::get('ranking', function () {

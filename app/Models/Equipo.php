@@ -9,8 +9,12 @@ class Equipo extends Model
 {
     use HasFactory;
 
+    // public function partido(){
+    //     return $this->hasMany('App\Models\Partido');
+    // }
+
     public function partido(){
-        return $this->hasMany('App\Models\Partido');
+        return $this->hasMany(Partido::class);
     }
 
     public function detalle_grupo(){

@@ -9,40 +9,40 @@
     </head>
     <body class="antialiased">        
         @yield('menuhome', View('menuhome'))  
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-4 bg-danger">Partido jugado</div>
-        <div class="col-md"></div>
-        </div> 
-
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-3 bg-secondary">Argentina</div>
-        <div class="col-md-1 bg-danger">
-            <input type="number" value="1"></div>
-        <div class="col-md-1 bg-danger">
-           <input type="number" value="0"></div>
-            <br>
-        <div class="col-md-3 bg-secondary">Arabia Saudita</div>
-        <div class="col-md"></div>        
-        </div>
-        <br>
-        <div class="row partidosProde">
+        <br>        
+        @foreach ($partidos as $partido)        
+            @php
+                $hoy = new Date('Y-m-d');
+                $fechaPartido = new Date($partido->fecha)                     ;
+            @endphp            
+            @if ($partido->estado == 0)
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-4 bg-danger">{{ $partido->fecha }} - {{ $partido->hora }}</div>
+                    <div class="col-md"></div>
+                </div> 
+            @else
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-4 bg-success">{{ $partido->fecha }} - {{ $partido->hora }}</div>
+                    <div class="col-md"></div>
+                </div>
+            @endif 
+            <br>    
+            <div class="row partidosProde">
                 <div class="col-md"></div>
-                <div class="col-md-4 bg-success">Domingo (20/11) 07:00</div>
-                <div class="col-md"></div>
-        </div>
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-3 bg-secondary">Qatar</div>
-        <div class="col-md-1 bg-success"> <input type="number"></div>
-        <div class="col-md-1 bg-success"> <input type="number"></div>
-        <div class="col-md-3 bg-secondary">Ecuador</div>
-        <div class="col-md"></div>         
-        </div>
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_1 }}</div>
+                <div class="col-md-1 bg-danger">
+                    <input type="number" value="1"></div>
+                <div class="col-md-1 bg-danger">
+                <input type="number" value="0"></div>
+                <br>
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_2 }}</div>
+                <div class="col-md"></div>        
+            </div>     
+            
+            {{$partido}}
+        @endforeach
 
 
 

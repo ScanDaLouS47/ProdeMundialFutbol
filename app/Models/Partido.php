@@ -10,7 +10,7 @@ class Partido extends Model
     use HasFactory;
 
     public function equipo_1(){
-        return $this->belongsTo('App\Models\Equipo');
+        return $this->belongsTo(Equipo::class);
     }
 
     public function equipo_2(){
