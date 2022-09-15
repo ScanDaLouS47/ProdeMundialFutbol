@@ -36,13 +36,17 @@ Route::get('prode', function () {
 })->name('prode');
 
 Route::get('fixture', function () {
-    $partidos = Partido::all();    
+    $partidos = Partido::all();
+    // var_dump($partidos);    
+    // $partidos = $partidos->equipo_2();
+    // dd($partidos); 
     // foreach ($partidos as $partido) {
-    //     $equipo1 = Equipo::where('id','=',$partido->id_equipo_1);
-    //     $equipo2 = Equipo::where('id','=',$partido->id_equipo_2);
-    //     $partido->id_equipo_1 = $equipo1->nombre_equipo;
-    //     $partido->id_equipo_2 = $equipo2->nombre_equipo;
-    // }    
+    //     $partido = $partido->equipo();
+    // } 
+    
+    // $partidos->equipo = $partidos->equipo; 
+    // dd($partidos->equipo);   
+    // var_dump($partidos);
     return view('fixture', ['partidos' => $partidos]);
 })->name('fixture');
 

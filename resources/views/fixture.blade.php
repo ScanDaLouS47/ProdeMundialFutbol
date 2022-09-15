@@ -13,7 +13,7 @@
         @foreach ($partidos as $partido)        
             @php
                 $hoy = new Date('Y-m-d');
-                $fechaPartido = new Date($partido->fecha)                     ;
+                $fechaPartido = new Date($partido->fecha);
             @endphp            
             @if ($partido->estado == 0)
                 <div class="row partidosProde">
@@ -31,21 +31,16 @@
             <br>    
             <div class="row partidosProde">
                 <div class="col-md"></div>
-                <div class="col-md-3 bg-secondary">{{ $partido->equipo_1 }}</div>
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_1->nombre_equipo }}</div>
                 <div class="col-md-1 bg-danger">
                     <input type="number" value="1"></div>
                 <div class="col-md-1 bg-danger">
                 <input type="number" value="0"></div>
                 <br>
-                <div class="col-md-3 bg-secondary">{{ $partido->equipo_2 }}</div>
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_2->nombre_equipo }}</div>
                 <div class="col-md"></div>        
-            </div>     
-            
-            {{$partido}}
+            </div>                         
         @endforeach
-
-
-
 
         @if(session('resp') == 'ok')
           <script>
