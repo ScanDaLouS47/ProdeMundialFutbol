@@ -14,21 +14,78 @@
             @php
                 $hoy = new Date('Y-m-d');
                 $fechaPartido = new Date($partido->fecha);
+                $fecha = explode("-",$partido->fecha);
             @endphp            
             @if ($partido->estado == 0)
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-md-4 bg-danger">{{ $partido->fecha }} - {{ $partido->hora }}</div>
+                    <div class="col-md-4 bg-danger titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
+                </div>   
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-3 bg-secondary"> 
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_1->nombre_equipo }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 bg-danger">
+                        <input class="golesResultado" type="number" value="1" readonly></div>
+                    <div class="col-md-1 bg-danger">
+                        <input class="golesResultado" type="number" value="1" readonly></div>
+                    <div class="col-md-3 bg-secondary">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_2->nombre_equipo }}
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md"></div>        
                 </div> 
             @else
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-md-4 bg-success">{{ $partido->fecha }} - {{ $partido->hora }}</div>
+                    <div class="col-md-4 bg-success titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
-                </div>
+                </div> 
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-3 bg-secondary">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_1->nombre_equipo }}
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-1 bg-success">
+                        <input class="golesResultado" type="number" value="1" readonly></div>
+                    <div class="col-md-1 bg-success">
+                        <input class="golesResultado" type="number" value="1" readonly></div>                    
+                    <div class="col-md-3 bg-secondary">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_2->nombre_equipo }}
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md"></div>        
+                </div> 
             @endif 
-            <br>    
+            {{-- <br>    
             <div class="row partidosProde">
                 <div class="col-md"></div>
                 <div class="col-md-3 bg-secondary">{{ $partido->equipo_1->nombre_equipo }}</div>
@@ -39,7 +96,7 @@
                 <br>
                 <div class="col-md-3 bg-secondary">{{ $partido->equipo_2->nombre_equipo }}</div>
                 <div class="col-md"></div>        
-            </div>                         
+            </div>                          --}}
         @endforeach
 
         @if(session('resp') == 'ok')
