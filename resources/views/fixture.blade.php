@@ -11,12 +11,11 @@
         @yield('menuhome', View('menuhome'))  
         <br>        
         @foreach ($partidos as $partido)        
-            @php
-                $hoy = new Date('Y-m-d');
-                $fechaPartido = new Date($partido->fecha);
+            @php                                                
                 $fecha = explode("-",$partido->fecha);
+                $hoy = Carbon\Carbon::now();                
             @endphp            
-            @if ($partido->estado == 0)
+            @if ($partido->fecha > $hoy)
                 <div class="row partidosProde">
                     <div class="col-md"></div>
                     <div class="col-md-4 bg-danger titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
@@ -35,9 +34,9 @@
                         </div>
                     </div>
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado" type="number" value="1" readonly></div>
+                        <input class="golesResultado" type="number" value="" readonly></div>
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado" type="number" value="1" readonly></div>
+                        <input class="golesResultado" type="number" value="" readonly></div>
                     <div class="col-md-3 bg-secondary">
                         <div class="row">
                             <div class="col-md-2">
@@ -64,14 +63,15 @@
                                 <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
                             </div>
                             <div class="col-md-10 nombreEquipos centrarNombres">
-                                {{ $partido->equipo_1->nombre_equipo }}
+                                {{ $partido->equipo_1->nombre_equipo }}                                
+                                
                             </div>
                         </div>                        
                     </div>
                     <div class="col-md-1 bg-success">
-                        <input class="golesResultado" type="number" value="1" readonly></div>
+                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
                     <div class="col-md-1 bg-success">
-                        <input class="golesResultado" type="number" value="1" readonly></div>                    
+                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>                    
                     <div class="col-md-3 bg-secondary">
                         <div class="row">
                             <div class="col-md-2">
