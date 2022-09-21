@@ -121,7 +121,7 @@ a {
 .partidosProde{
     font-size: 22px;
     font-family: 'Merriweather Sans', sans-serif;
-    color:#f3f3f3  ; 
+    color:#030303  ; 
     font-weight: bold;
     margin-bottom: 12px;
 }
@@ -129,13 +129,16 @@ a {
 .tituloGrupos{
     text-align: center; 
     padding: 10px;
+    color:#f3f3f3
 }
+
 
 .textoSegundoEquipo{
     text-align: left;
 }
 
 .imgBandera{
+    border:1px solid #000;
     width: 100%;
     height: auto;
 }

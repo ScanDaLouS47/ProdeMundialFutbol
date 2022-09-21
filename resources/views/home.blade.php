@@ -96,7 +96,7 @@
                          </div>
                     </h1>
                      <br>
-                     <img src="./img/imghome/qatar22.jpg" alt="">
+                     <img src="./img/imghome/pelota22.jpg" alt="">
                      <p class="textohome">
                      Si aciertas el ganador ,perdedor o un empate ganaras 3 pts , pero si acierta el resultado que agregaste ganas total 5 pts por partido.
                      Luego de cada partido tendras que ver en que puesto estas en la tabla de posiciones.
