@@ -15,7 +15,10 @@
         @yield('menuhome', View('menuhome'))        
         
         <div class="row" data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".row">
-            <div class="col-md-5">
+         <div class="col-md-12 ">
+              <img src="./img/imghome/jugadores.jpg" alt=""> 
+         </div>
+         <div class="col-md-4 col-md-5">
              <p class=" textohome">
             La Copa Mundial de Fútbol de la FIFA Catar 2022,
              será la XXII edición de la Copa Mundial de Fútbol masculino organizada por la FIFA.
@@ -58,7 +61,14 @@
                 </div>
                 <div class="col-md-2"></div>
                 <div class="col-md-5 textohome">
+                  <div class="col-md-12">
+                     <img src="" alt=""> 
+                </div>
+                <div class="col-md-12 col-md-5">
                     <h1 class="tituloshome">
+                     <div class="col-md-12 ">
+                        <img src="./img/imghome/copa.jpg" alt=""> 
+                   </div>
                     INFO DEL PROFE Y SU FUNCIONAMIENTO 
                     </h1> 
                     <hr>
@@ -68,13 +78,25 @@
                      tambien puedes agregar algun resultado a tu parecer como en el ejemplo acontinuacion.
                     </p>
                      <h1 class="textohome">
-                     ARGENTINA 2
-                     <br>
-                              vs
-                     <br>
-                     POLONIA    1
+                        <div class="col">
+                           <div class="row partidosProde">
+                              <div class="col-md"></div>
+                          <div class="col-md-4 bg-secondary">Argentina</div>
+                          <div class="col-md-1 bg-success">
+                              1</div>
+                          <div class="col-md-1 bg-danger">
+                             0</div>
+                              <br>
+                          <div class="col-md-4   bg-secondary">Arabia Saudita</div>
+                          <div class="col-md"></div>        
+                          </div>
+                           
+                            
+                        
+                         </div>
                     </h1>
                      <br>
+                     <img src="./img/imghome/pelota22.jpg" alt="">
                      <p class="textohome">
                      Si aciertas el ganador ,perdedor o un empate ganaras 3 pts , pero si acierta el resultado que agregaste ganas total 5 pts por partido.
                      Luego de cada partido tendras que ver en que puesto estas en la tabla de posiciones.
@@ -82,6 +104,7 @@
                      tambien podes elegir los equipos que salgan primero y segundo de cada grupo para una posible segunda etapa.En caso de una 
                      segunda etapa se tendra en cuenta los resultados de la eleccion de primer y segundo puesto en cada grupo, para sumar dichos puntos.
                      </p>
+                  </div>
 
                 </div>
         </div>
