@@ -34,10 +34,6 @@ a {
     background-color: #8c183d;
 }
 
-.fondoBoton{
-
-}
-
 .fondoBoton:hover{
     background-color: #7C1838;
 }
@@ -140,7 +136,15 @@ a {
     height: auto;
 }
 
-@media (max-width: 720px) {
+.golesResultado{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
     .textoSegundoEquipo{
         text-align: right;        
     }
@@ -154,5 +158,22 @@ a {
 
     .nombreEquipos{
         font-size: 36px;
+    }
+
+    .centrarNombres{
+        text-align: center;
+    }
+
+    .golesResultado{
+        width: 100%;
+        height: 80px;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .titulosFixture{
+        font-size: 26px;
+        text-align: center;
     }
 }

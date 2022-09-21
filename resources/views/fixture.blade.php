@@ -9,43 +9,95 @@
     </head>
     <body class="antialiased">        
         @yield('menuhome', View('menuhome'))  
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-4 bg-danger">Partido jugado</div>
-        <div class="col-md"></div>
-        </div> 
-
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-3 bg-secondary">Argentina</div>
-        <div class="col-md-1 bg-danger">
-            <input type="number" value="1"></div>
-        <div class="col-md-1 bg-danger">
-           <input type="number" value="0"></div>
-            <br>
-        <div class="col-md-3 bg-secondary">Arabia Saudita</div>
-        <div class="col-md"></div>        
-        </div>
-        <br>
-        <div class="row partidosProde">
+        <br>        
+        @foreach ($partidos as $partido)        
+            @php                                                
+                $fecha = explode("-",$partido->fecha);
+                $hoy = Carbon\Carbon::now();                
+            @endphp            
+            @if ($partido->fecha > $hoy)
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-4 bg-danger titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
+                    <div class="col-md"></div>
+                </div>   
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-3 "> 
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_1->nombre_equipo }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 bg-danger">
+                        <input class="golesResultado" type="number" value="" readonly></div>
+                    <div class="col-md-1 bg-danger">
+                        <input class="golesResultado" type="number" value="" readonly></div>
+                    <div class="col-md-3 ">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_2->nombre_equipo }}
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md"></div>        
+                </div> 
+            @else
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-4 bg-success titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
+                    <div class="col-md"></div>
+                </div> 
+                <div class="row partidosProde">
+                    <div class="col-md"></div>
+                    <div class="col-md-3 ">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_1->nombre_equipo }}                                
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-1 bg-success">
+                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
+                    <div class="col-md-1 bg-success">
+                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>                    
+                    <div class="col-md-3 ">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
+                            </div>
+                            <div class="col-md-10 nombreEquipos centrarNombres">
+                                {{ $partido->equipo_2->nombre_equipo }}
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md"></div>        
+                </div> 
+            @endif 
+            {{-- <br>    
+            <div class="row partidosProde">
                 <div class="col-md"></div>
-                <div class="col-md-4 bg-success">Domingo (20/11) 07:00</div>
-                <div class="col-md"></div>
-        </div>
-        <br>
-        <div class="row partidosProde">
-            <div class="col-md"></div>
-        <div class="col-md-3 bg-secondary">Qatar</div>
-        <div class="col-md-1 bg-success"> <input type="number"></div>
-        <div class="col-md-1 bg-success"> <input type="number"></div>
-        <div class="col-md-3 bg-secondary">Ecuador</div>
-        <div class="col-md"></div>         
-        </div>
-
-
-
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_1->nombre_equipo }}</div>
+                <div class="col-md-1 bg-danger">
+                    <input type="number" value="1"></div>
+                <div class="col-md-1 bg-danger">
+                <input type="number" value="0"></div>
+                <br>
+                <div class="col-md-3 bg-secondary">{{ $partido->equipo_2->nombre_equipo }}</div>
+                <div class="col-md"></div>        
+            </div>                          --}}
+        @endforeach
 
         @if(session('resp') == 'ok')
           <script>
