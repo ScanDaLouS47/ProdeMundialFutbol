@@ -23,7 +23,7 @@
                 </div>   
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-md-3 bg-secondary"> 
+                    <div class="col-md-3 "> 
                         <div class="row">
                             <div class="col-md-2">
                                 <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
@@ -37,7 +37,7 @@
                         <input class="golesResultado" type="number" value="" readonly></div>
                     <div class="col-md-1 bg-danger">
                         <input class="golesResultado" type="number" value="" readonly></div>
-                    <div class="col-md-3 bg-secondary">
+                    <div class="col-md-3 ">
                         <div class="row">
                             <div class="col-md-2">
                                 <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
@@ -57,7 +57,7 @@
                 </div> 
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-md-3 bg-secondary">
+                    <div class="col-md-3 ">
                         <div class="row">
                             <div class="col-md-2">
                                 <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
@@ -72,7 +72,7 @@
                         <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
                     <div class="col-md-1 bg-success">
                         <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>                    
-                    <div class="col-md-3 bg-secondary">
+                    <div class="col-md-3 ">
                         <div class="row">
                             <div class="col-md-2">
                                 <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">

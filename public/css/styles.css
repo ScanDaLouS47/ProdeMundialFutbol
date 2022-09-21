@@ -136,7 +136,15 @@ a {
     height: auto;
 }
 
-@media (max-width: 720px) {
+.golesResultado{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
     .textoSegundoEquipo{
         text-align: right;        
     }
