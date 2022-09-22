@@ -120,6 +120,7 @@ a {
     color:#030303  ; 
     font-weight: bold;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .tituloGrupos{
@@ -145,6 +146,10 @@ a {
     font-weight: bold;
     font-size: 26px;
     text-align: center;
+}
+
+.titulosFixture{
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 720px) {
