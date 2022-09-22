@@ -16,7 +16,7 @@
         
         <div class="row" data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".row">
          <div class="col-md-12 ">
-              <img src="./img/imghome/jugadores.jpg" alt=""> 
+              <img src="./img/imghome/jugadores.jpg"   class="imgHome"> 
          </div>
          <div class="col-md-4 col-md-5">
              <p class=" textohome">
@@ -55,6 +55,7 @@
                    BALON OFICIAL
                     </h1>
                     <p class="textohome">
+                     <img src="./img/imghome/pelota qatar.jpg" alt="imgHome">
                     Al Rihla es el nombre oficial del balón para el torneo.
                      <hr>
                     </p>
@@ -96,7 +97,7 @@
                          </div>
                     </h1>
                      <br>
-                     <img src="./img/imghome/pelota22.jpg" alt="">
+                     
                      <p class="textohome">
                      Si aciertas el ganador ,perdedor o un empate ganaras 3 pts , pero si acierta el resultado que agregaste ganas total 5 pts por partido.
                      Luego de cada partido tendras que ver en que puesto estas en la tabla de posiciones.
