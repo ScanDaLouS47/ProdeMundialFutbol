@@ -26,6 +26,18 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoD" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo D</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoE" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo E</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoF" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo F</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoG" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo G</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoH" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo H</button>
+                    </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="grupoA" role="tabpanel" aria-labelledby="home-tab">
@@ -132,6 +144,11 @@
                                         <img src="./img/banderas/senegal.gif" class="imgBandera">
                                     </div>       
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="btn btn-success" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
                             </div>
                         </div>
                     </div>
@@ -241,6 +258,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="grupoC" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="row">                            
@@ -347,6 +374,12 @@
                                     </div>    
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="grupoD" role="tabpanel" aria-labelledby="contact-tab">
@@ -455,7 +488,460 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        </div>
                     </div>
+                    <div class="tab-pane fade" id="grupoE" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">                            
+                            <div class="col-md-12">
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-md-12 bg-primary tituloGrupos">Grupo E</div>                 
+                                </div> 
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/alemania.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">ALEMANIA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/japon.gif" class="imgBandera">
+                                    </div>       
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/españa.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COSTA RICA</div>    
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
+                                    </div>     
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/japon.gif" class="imgBandera">
+                                    </div>       
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/españa.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA </div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div>   
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/alemania.gif" class="imgBandera">
+                                    </div>      
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/españa.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>       
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/japon.gif" class="imgBandera">
+                                    </div>  
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div> 
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/alemania.gif" class="imgBandera">
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        </div>
+                    </div>   
+                    <div class="tab-pane fade" id="grupoF" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="col-md-12">
+                            <br>
+                            <div class="row partidosProde">
+                                <div class="col-md-12 bg-primary tituloGrupos">Grupo F</div>                     
+                            </div> 
+                            <br>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/marruecos.gif" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">MARRUECOS</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>         
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/croacia.gif" class="imgBandera">
+                                </div>
+                            </div>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/belgica.gif" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CANADA</div> 
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                </div>       
+                            </div>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/belgica.gif" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>  
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/marruecos.gif" class="imgBandera">
+                                </div>       
+                            </div>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/croacia.gif" class="imgBandera">
+                                </div>       
+                            </div>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/belgica.gif" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/croacia.gif" class="imgBandera">
+                                </div>       
+                            </div>
+                            <div class="row partidosProde">
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                </div>
+                                <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
+                                <div class="col-12 col-md-2  ">
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-2 "> 
+                                    <input type="number" style="width: 100%">
+                                </div>
+                                <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>   
+                                <div class="col-12 col-md-1 ">
+                                    <img src="./img/banderas/marruecos.gif" class="imgBandera">
+                                </div>      
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="grupoG" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-md-12 bg-primary tituloGrupos ">Grupo G</div>                     
+                                </div> 
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/suiza.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">SUIZA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>     
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/camerun.gif" class="imgBandera">
+                                    </div>    
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/brazil.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SERBIA</div> 
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/serbia.gif" class="imgBandera">
+                                    </div>        
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/serbia.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>         
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/camerun.gif" class="imgBandera">
+                                    </div>
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/brazil.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>   
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/suiza.gif" class="imgBandera">
+                                    </div>      
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/brazil.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div> 
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/camerun.gif" class="imgBandera">
+                                    </div>        
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/serbia.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>     
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/suiza.gif" class="imgBandera">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="grupoH" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-md-12 bg-primary tituloGrupos ">Grupo H</div>                    
+                                </div> 
+                                <br>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">URUGUAY</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>   
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/corea.gif" class="imgBandera">
+                                    </div>      
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/portugal.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GHANA</div>   
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/ghana.gif" class="imgBandera">
+                                    </div>      
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/ghana.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">GHANA</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/corea.gif" class="imgBandera">
+                                    </div>         
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/portugal.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>    
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
+                                    </div>     
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/portugal.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>  
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/corea.gif" class="imgBandera">
+                                    </div>       
+                                </div>
+                                <div class="row partidosProde">
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/inglaterra.gif" class="imgBandera">
+                                    </div>
+                                    <div class="col-12 col-md-3  nombreEquipos">GHANA </div>
+                                    <div class="col-12 col-md-2  ">
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-2 "> 
+                                        <input type="number" style="width: 100%">
+                                    </div>
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>   
+                                    <div class="col-12 col-md-1 ">
+                                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        </div>
+                    </div>    
                   </div>
             </div>
             <div class="col-md-1"></div>
@@ -463,417 +949,13 @@
         <br>
         <br>
         <div class="row">
-            <div class="col-md-6">
-                <div class="row partidosProde">
-                    <div class="col-md-12 bg-primary tituloGrupos">Grupo E</div>                 
-                </div> 
-                <br>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/alemania.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">ALEMANIA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/japon.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/españa.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COSTA RICA</div>    
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
-                    </div>     
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/japon.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/españa.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA </div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/alemania.gif" class="imgBandera">
-                    </div>      
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/españa.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>       
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/japon.gif" class="imgBandera">
-                    </div>  
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/costa-rica.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div> 
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/alemania.gif" class="imgBandera">
-                    </div>        
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row partidosProde">
-                    <div class="col-md-12 bg-primary tituloGrupos">Grupo F</div>                     
-                </div> 
-                <br>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/marruecos.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">MARRUECOS</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>         
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/croacia.gif" class="imgBandera">
-                    </div>
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/belgica.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CANADA</div> 
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/canad.png" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/belgica.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/marruecos.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/canad.png" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/croacia.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/belgica.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/croacia.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/canad.png" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/marruecos.gif" class="imgBandera">
-                    </div>      
-                </div>
-            </div>
+            
+            
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
-                <div class="row partidosProde">
-                    <div class="col-md-12 bg-primary tituloGrupos ">Grupo G</div>                     
-                </div> 
-                <br>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/suiza.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">SUIZA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>     
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/camerun.gif" class="imgBandera">
-                    </div>    
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/brazil.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SERBIA</div> 
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/serbia.gif" class="imgBandera">
-                    </div>        
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/serbia.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>         
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/camerun.gif" class="imgBandera">
-                    </div>
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/brazil.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/suiza.gif" class="imgBandera">
-                    </div>      
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/brazil.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div> 
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/camerun.gif" class="imgBandera">
-                    </div>        
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/serbia.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>     
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/suiza.gif" class="imgBandera">
-                    </div>    
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row partidosProde">
-                    <div class="col-md-12 bg-primary tituloGrupos ">Grupo H</div>                    
-                </div> 
-                <br>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">URUGUAY</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/corea.gif" class="imgBandera">
-                    </div>      
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/portugal.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GHANA</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/ghana.gif" class="imgBandera">
-                    </div>      
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/ghana.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">GHANA</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/corea.gif" class="imgBandera">
-                    </div>         
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/portugal.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>    
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
-                    </div>     
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/portugal.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>  
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/corea.gif" class="imgBandera">
-                    </div>       
-                </div>
-                <div class="row partidosProde">
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/inglaterra.gif" class="imgBandera">
-                    </div>
-                    <div class="col-12 col-md-3  nombreEquipos">GHANA </div>
-                    <div class="col-12 col-md-2  ">
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-2 "> 
-                        <input type="number" style="width: 100%">
-                    </div>
-                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>   
-                    <div class="col-12 col-md-1 ">
-                        <img src="./img/banderas/uruguay.gif" class="imgBandera">
-                    </div>      
-                </div>
-            </div>
+            
+            
         </div>
         <br>
 
