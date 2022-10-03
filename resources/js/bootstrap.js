@@ -12,6 +12,15 @@ window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+
+// import AOS from 'aos';
+// window.AOS = AOS;
+// ..
+
+// window.AOS = require('aos');
+// AOS.init();
+
+
 // import Aos from 'aos';
 // window.Aos = Aos;
 

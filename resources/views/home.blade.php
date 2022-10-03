@@ -4,7 +4,7 @@
         @yield('imports', View('imports'))
 
         <script>
-            AOS.init();
+            ScrollReveal({ duration: 1000 });
         </script>
         
         <title>ProdeMundial</title>        
@@ -16,15 +16,17 @@
         
         <div class="row" data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".row">
          <div class="col-md-12 ">
-              <img src="./img/imghome/jugadores.jpg"   class="imgHome"> 
+              <img src="./img/imghome/jugadores.jpg"   class="imgHome imgPrincipal"> 
          </div>
          <div class="col-md-4 col-md-5">
-             <p class=" textohome">
-            La Copa Mundial de Fútbol de la FIFA Catar 2022,
-             será la XXII edición de la Copa Mundial de Fútbol masculino organizada por la FIFA.
-              Se desarrollará desde el 20 de noviembre al 18 de diciembre en Catar,
-               que consiguió los derechos de organización el 2 de diciembre de 2010.
-            </p>
+            <div data-aos="fade-in">
+               <p class=" textohome txtPrincipal">
+               La Copa Mundial de Fútbol de la FIFA Catar 2022,
+               será la XXII edición de la Copa Mundial de Fútbol masculino organizada por la FIFA.
+               Se desarrollará desde el 20 de noviembre al 18 de diciembre en Catar,
+                  que consiguió los derechos de organización el 2 de diciembre de 2010.
+               </p>
+            </div>
                <hr>
                 <h1 class="tituloshome" >
               SEDES
@@ -111,5 +113,10 @@
         </div>
 
         @yield('footer', View('footer'))
+        <script>         
+         ScrollReveal({ distance: '500px' }).reveal('.imgPrincipal', { origin: 'top' })
+         ScrollReveal({ distance: '100px' }).reveal('.txtPrincipal', { delay: 2000, origin: 'right' })         
+         ScrollReveal().reveal('.punchline', { delay: 2000 })
+      </script>
     </body>
 </html>
