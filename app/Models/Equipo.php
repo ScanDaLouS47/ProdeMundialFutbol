@@ -10,6 +10,8 @@ class Equipo extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function partidos_local(){
         return $this->hasMany(Partido::class, 'id_equipo_1','id');
     }

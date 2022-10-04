@@ -9,6 +9,8 @@ class Estadio extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function detalles_grupos(){
         return $this->hasMany('App\Models\DetalleProde');
     }

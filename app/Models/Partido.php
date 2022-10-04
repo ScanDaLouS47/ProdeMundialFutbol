@@ -11,6 +11,8 @@ class Partido extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function equipo_1(){
         return $this->belongsTo(Equipo::class,'id_equipo_1','id');
     }

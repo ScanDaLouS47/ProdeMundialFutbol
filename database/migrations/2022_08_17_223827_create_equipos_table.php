@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('nombre_equipo');
             $table->string('imagen');
+            $table->string('grupo');
+            $table->integer('puntos');
             $table->integer('estado');
         });
     }

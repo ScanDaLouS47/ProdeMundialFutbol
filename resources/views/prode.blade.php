@@ -15,32 +15,33 @@
             <div class="col-12 col-md-10">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#grupoA" type="button" role="tab" aria-controls="home" aria-selected="true">Grupo A</button>
+                      <button class="nav-link active" id="grupoA-tab" data-toggle="tab" data-target="#grupoA" type="button" role="tab" aria-controls="grupoA" aria-selected="true">Grupo A</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">Grupo B</button>
+                      <button class="nav-link" id="grupoB-tab" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="grupoB" aria-selected="false">Grupo B</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoC" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo C</button>
+                      <button class="nav-link" id="grupoC-tab" data-toggle="tab" data-target="#grupoC" type="button" role="tab" aria-controls="grupoC" aria-selected="false">Grupo C</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoD" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo D</button>
+                        <button class="nav-link" id="grupoD-tab" data-toggle="tab" data-target="#grupoD" type="button" role="tab" aria-controls="grupoD" aria-selected="false">Grupo D</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoE" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo E</button>
+                        <button class="nav-link" id="grupoE-tab" data-toggle="tab" data-target="#grupoE" type="button" role="tab" aria-controls="grupoE" aria-selected="false">Grupo E</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoF" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo F</button>
+                        <button class="nav-link" id="grupoF-tab" data-toggle="tab" data-target="#grupoF" type="button" role="tab" aria-controls="grupoF" aria-selected="false">Grupo F</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoG" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo G</button>
+                        <button class="nav-link" id="grupoG-tab" data-toggle="tab" data-target="#grupoG" type="button" role="tab" aria-controls="grupoG" aria-selected="false">Grupo G</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#grupoH" type="button" role="tab" aria-controls="contact" aria-selected="false">Grupo H</button>
+                        <button class="nav-link" id="grupoH-tab" data-toggle="tab" data-target="#grupoH" type="button" role="tab" aria-controls="grupoH" aria-selected="false">Grupo H</button>
                     </li>
                   </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="grupoA" role="tabpanel" aria-labelledby="home-tab">
+                <form action="">  
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="grupoA" role="tabpanel" aria-labelledby="grupoA-tab">
                         <div class="row">
                             <div class="col-md-12">
                                 <br>
@@ -147,12 +148,12 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <button class="btn btn-success" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoB" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade" id="grupoB" role="tabpanel" aria-labelledby="grupoB-tab">
                         <div class="row">                            
                             <div class="col-md-12">
                                 <br>
@@ -259,17 +260,12 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoC" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="grupoC" role="tabpanel" aria-labelledby="grupoC-tab">
                         <div class="row">                            
                             <div class="col-md-12">
                                 <br>
@@ -375,14 +371,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoD" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="grupoD" role="tabpanel" aria-labelledby="grupoD-tab">
                         <div class="row">                            
                             <div class="col-md-12">
                                 <br>
@@ -488,14 +483,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoE" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="grupoE" role="tabpanel" aria-labelledby="grupoE-tab">
                         <div class="row">                            
                             <div class="col-md-12">
                                 <br>
@@ -601,14 +595,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
+                            </div>
                         </div>
                     </div>   
-                    <div class="tab-pane fade" id="grupoF" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="grupoF" role="tabpanel" aria-labelledby="grupoF-tab">
                         <div class="col-md-12">
                             <br>
                             <div class="row partidosProde">
@@ -712,14 +705,13 @@
                                 </div>      
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoG" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade" id="grupoG" role="tabpanel" aria-labelledby="grupoG-tab">
                         <div class="row">
                             <div class="col-md-12">
                                 <br>
@@ -825,14 +817,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">SIGUIENTE</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-secondary btn-lg btn-block" type="button" disabled>Guardar</button>                                
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grupoH" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="grupoH" role="tabpanel" aria-labelledby="grupoH-tab">
                         <div class="row">
                             <div class="col-md-12">
                                 <br>
@@ -938,25 +929,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary" data-toggle="tab" data-target="#grupoB" type="button" role="tab" aria-controls="profile" aria-selected="false">ANTERIOR</button>
+                        <div class="row">
+                            <div class="col-12 offset-md-4 col-md-4">                                
+                                <button class="btn btn-success btn-lg btn-block" type="submit">Guardar</button>                                
+                            </div>
                         </div>
                     </div>    
-                  </div>
+                </div>
+                </form>
             </div>
             <div class="col-md-1"></div>
         </div>        
         <br>
-        <br>
-        <div class="row">
-            
-            
-        </div>
-        <br>
-        <div class="row">
-            
-            
-        </div>
         <br>
 
         @if(session('resp') == 'ok')
