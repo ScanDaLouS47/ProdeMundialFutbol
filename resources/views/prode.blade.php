@@ -54,10 +54,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos"> ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-1-1">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-1-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">QATAR</div>  
                                     <div class="col-12 col-md-1 ">
@@ -70,10 +70,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">SENEGAL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-2-1">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-2-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>    
                                     <div class="col-12 col-md-1">
@@ -86,10 +86,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">QATAR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-3-1">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-3-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SENEGAL</div>   
                                     <div class="col-12 col-md-1 ">
@@ -102,10 +102,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-4-1" >
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-4-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>   
                                     <div class="col-12 col-md-1 ">
@@ -118,10 +118,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">QATAR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-5-1">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-5-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>  
                                     <div class="col-12 col-md-1 ">
@@ -134,10 +134,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-6-1">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%">
+                                        <input type="number" style="width: 100%" name="p-6-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SENEGAL</div>  
                                     <div class="col-12 col-md-1 ">
