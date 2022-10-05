@@ -39,7 +39,8 @@
                         <button class="nav-link" id="grupoH-tab" data-toggle="tab" data-target="#grupoH" type="button" role="tab" aria-controls="grupoH" aria-selected="false">Grupo H</button>
                     </li>
                   </ul>
-                <form action="">  
+                <form action="{{route('prode.index')}}" method="POST">
+                @csrf  
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="grupoA" role="tabpanel" aria-labelledby="grupoA-tab">
                         <div class="row">

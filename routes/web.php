@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\OlvidePassController;
+use App\Http\Controllers\ProdeController;
 use App\Models\Equipo;
 use App\Models\Partido;
 use Illuminate\Support\Facades\Route;
@@ -69,6 +70,8 @@ Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.inde
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
 
 Route::post('login', [LoginController::class, 'index'])->name('login.index');
+
+Route::post('prode', [ProdeController::class, 'index'])->name('prode.index');
 
 
 Route::get('*', function () {

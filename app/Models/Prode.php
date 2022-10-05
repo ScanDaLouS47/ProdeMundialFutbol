@@ -9,6 +9,8 @@ class Prode extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+        
     public function detalle_prode(){
         return $this->hasMany('App\Models\DetalleProde');
     }
