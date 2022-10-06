@@ -8,11 +8,20 @@
         
     </head>
     <body class="antialiased">        
-        @yield('menuhome', View('menuhome'))  
+        @yield('menu', View('menu'))  
         <br>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-12 col-md-10">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            <li style="margin-left: 2%;">
+                                <p>Debe completar todos los partidos de todos los grupos.</p>
+                            </li>
+                        </ul>                        
+                    </div>
+                @endif
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="grupoA-tab" data-toggle="tab" data-target="#grupoA" type="button" role="tab" aria-controls="grupoA" aria-selected="true">Grupo A</button>
@@ -40,7 +49,7 @@
                     </li>
                   </ul>
                 <form action="{{route('prode.index')}}" method="POST">
-                @csrf  
+                @csrf                  
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="grupoA" role="tabpanel" aria-labelledby="grupoA-tab">
                         <div class="row">
@@ -56,10 +65,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos"> ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1">
+                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2">
+                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">QATAR</div>  
                                     <div class="col-12 col-md-1 ">
@@ -72,10 +81,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">SENEGAL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1">
+                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2">
+                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>    
                                     <div class="col-12 col-md-1">
@@ -88,10 +97,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">QATAR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1">
+                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2">
+                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SENEGAL</div>   
                                     <div class="col-12 col-md-1 ">
@@ -104,10 +113,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" >
+                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2">
+                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>   
                                     <div class="col-12 col-md-1 ">
@@ -120,10 +129,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">QATAR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1">
+                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2">
+                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">PAISES BAJOS</div>  
                                     <div class="col-12 col-md-1 ">
@@ -136,10 +145,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ECUADOR</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1">
+                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2">
+                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SENEGAL</div>  
                                     <div class="col-12 col-md-1 ">
@@ -638,7 +647,7 @@
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CANADA</div> 
                                 <div class="col-12 col-md-1 ">
-                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                    <img src="./img/banderas/canada.png" class="imgBandera">
                                 </div>       
                             </div>
                             <div class="row partidosProde">
@@ -659,7 +668,7 @@
                             </div>
                             <div class="row partidosProde">
                                 <div class="col-12 col-md-1 ">
-                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                    <img src="./img/banderas/canada.png" class="imgBandera">
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
                                 <div class="col-12 col-md-2  ">
@@ -691,7 +700,7 @@
                             </div>
                             <div class="row partidosProde">
                                 <div class="col-12 col-md-1 ">
-                                    <img src="./img/banderas/canad.png" class="imgBandera">
+                                    <img src="./img/banderas/canada.png" class="imgBandera">
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
                                 <div class="col-12 col-md-2  ">
@@ -942,6 +951,45 @@
             <div class="col-md-1"></div>
         </div>        
         <br>
+        <hr>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5 class="d-block p-3 bg-dark text-white"><i class="fa-solid fa-table-list mx-2"></i> Mis Prodes</h5>
+                    </div>
+                </div> 
+                <br>                               
+                <table class="table">
+                    <thead>
+                      <tr>                        
+                        <th scope="col">Fecha Creacion</th>
+                        <th scope="col" class="text-center">Estado</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>                        
+                        <td>06-10-2022</td>
+                        <td class="text-center"><h5><span class="badge badge-pill badge-success">aprobado</span></h5></td>
+                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
+                      </tr>
+                      <tr>                        
+                        <td>06-10-2022</td>
+                        <td class="text-center"><h5><span class="badge badge-pill badge-danger">validando</span></h5></td>
+                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
+                      </tr>
+                      <tr>                        
+                        <td>06-10-2022</td>
+                        <td class="text-center"><h5><span class="badge badge-pill badge-danger">validando</span></h5></td>
+                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-1"></div>            
+        </div>
         <br>
 
         @if(session('resp') == 'ok')
@@ -979,6 +1027,11 @@
         //     `
         //   })
         </script>
+        @endif
+        @if(session('message'))
+            <script>
+              Swal.fire('<?= session("message"); ?>','Solo queda esperar la aprovación de un admin para que se active.','success');
+            </script>
         @endif
 
             

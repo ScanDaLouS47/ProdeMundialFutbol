@@ -18,7 +18,8 @@ class DetalleGrupo extends Model
     }
 
     public function usuario(){
-        return $this->belongsTo('App\Models\Usuario');
+        return $this->belongsTo(User::class, 'id_usuario','id');
+        // return $this->belongsTo('App\Models\Usuario');
     }
 
     public function grupo(){
