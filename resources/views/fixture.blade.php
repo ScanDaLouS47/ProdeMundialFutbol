@@ -8,61 +8,68 @@
         
     </head>
     <body class="antialiased">        
-        @yield('menuhome', View('menuhome'))  
+        @yield('menu', View('menu'))  
         <br>        
         @foreach ($partidos as $partido)        
             @php                                                
                 $fecha = explode("-",$partido->fecha);
                 $hoy = Carbon\Carbon::now();                
             @endphp            
-            @if ($partido->fecha > $hoy)
+            @if ($partido->fecha > $hoy)                
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-12 col-md-4 bg-danger titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
+                    <div class="col-12 col-md-8 bg-danger titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
                 </div>   
-                <div class="row partidosProde">
+                <div class="row partidosProde card-body">
                     <div class="col-md"></div>
                     <div class="col-md-3 "> 
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
                             </div>
-                            <div class="col-md-10 nombreEquipos centrarNombres">
+                            <div class="col-md-9 nombreEquipos centrarNombres">
                                 {{ $partido->equipo_1->nombre_equipo }}
                             </div>                            
                         </div>
                     </div>
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado" type="number" value="" readonly></div>
+                        <input class="golesResultado bg-dark" type="number" value="" readonly></div>
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado" type="number" value="" readonly></div>
+                        <input class="golesResultado bg-dark" type="number" value="" readonly></div>
                     <div class="col-md-3 ">
                         <div class="row">                                                      
-                            <div class="col-md-10 nombreEquipos centrarNombres">
+                            <div class="col-md-9 nombreEquipos centrarNombres">
                                 {{ $partido->equipo_2->nombre_equipo }}
                             </div>   
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
                             </div>                           
                         </div>                        
                     </div>
                     <div class="col-md"></div>        
-                </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                        <hr>
+                    </div>
+                    <div class="col-md"></div>
+                </div>                
             @else
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-12 col-md-4 bg-success titulosFixture">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
+                    <div class="col-12 col-md-8 bg-success titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
                 </div> 
                 <div class="row partidosProde">
                     <div class="col-md"></div>
                     <div class="col-md-3 ">
                         <div class="row">  
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <img src="img/banderas/{{ $partido->equipo_1->imagen }}" class="imgBandera">
                             </div>                         
-                            <div class="col-md-10 nombreEquipos centrarNombres">
+                            <div class="col-md-9 nombreEquipos centrarNombres">
                                 {{ $partido->equipo_1->nombre_equipo }}                                                                
                             </div>                            
                         </div>                        
@@ -73,68 +80,37 @@
                         <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>                    
                     <div class="col-md-3 ">
                         <div class="row">                            
-                            <div class="col-md-10 nombreEquipos centrarNombres">
+                            <div class="col-md-9 nombreEquipos centrarNombres">
                                 {{ $partido->equipo_2->nombre_equipo }}
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <img src="img/banderas/{{ $partido->equipo_2->imagen }}" class="imgBandera">
                             </div>
                         </div>                        
                     </div>
                     <div class="col-md"></div>        
                 </div> 
+                <div class="row">
+                    <div class="col-md"></div>
+                    <div class="col-md-8">
+                        <hr>
+                    </div>
+                    <div class="col-md"></div>
+                </div>  
             @endif 
-            {{-- <br>    
-            <div class="row partidosProde">
-                <div class="col-md"></div>
-                <div class="col-md-3 bg-secondary">{{ $partido->equipo_1->nombre_equipo }}</div>
-                <div class="col-md-1 bg-danger">
-                    <input type="number" value="1"></div>
-                <div class="col-md-1 bg-danger">
-                <input type="number" value="0"></div>
-                <br>
-                <div class="col-md-3 bg-secondary">{{ $partido->equipo_2->nombre_equipo }}</div>
-                <div class="col-md"></div>        
-            </div>                          --}}
-        @endforeach
+        @endforeach        
+
+        <div class="d-flex justify-content-center pagination-lg">
+            {!! $partidos->links() !!}
+        </div>
 
         @if(session('resp') == 'ok')
           <script>
-            
-            // Swal.fire({
-            //   title: 'Se ha registrado correctamente. Ahora puede entrar a nuestra app',
-            //   width: 600,
-            //   padding: '3em',
-            //   color: '#fff',
-            //   // color: '#716add',
-            //   background: '#8c183d url(/images/trees.png)',
-            //   backdrop: `
-            //     rgba(0,0,125,0.4)              
-            //     url("/img/qatar.gif")
-            //     center top
-            //     no-repeat
-            //   `
-            // })
           </script>
         @else
         <script>            
-        //   Swal.fire({
-        //     title: 'El usuario no se pudo registrar intentelo mas tarde.',
-        //     width: 600,
-        //     padding: '3em',
-        //     color: '#fff',
-        //     // color: '#716add',
-        //     background: '#8c183d url(/images/trees.png)',
-        //     backdrop: `
-        //       rgba(0,0,125,0.4)              
-        //       url("/img/qatar.gif")
-        //       center top
-        //       no-repeat
-        //     `
-        //   })
         </script>
         @endif
-
             
         @yield('footer', View('footer'))
     </body>

@@ -960,33 +960,39 @@
                         <h5 class="d-block p-3 bg-dark text-white"><i class="fa-solid fa-table-list mx-2"></i> Mis Prodes</h5>
                     </div>
                 </div> 
-                <br>                               
-                <table class="table">
-                    <thead>
-                      <tr>                        
-                        <th scope="col">Fecha Creacion</th>
-                        <th scope="col" class="text-center">Estado</th>
-                        <th scope="col" class="text-center">Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>                        
-                        <td>06-10-2022</td>
-                        <td class="text-center"><h5><span class="badge badge-pill badge-success">aprobado</span></h5></td>
-                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
-                      </tr>
-                      <tr>                        
-                        <td>06-10-2022</td>
-                        <td class="text-center"><h5><span class="badge badge-pill badge-danger">validando</span></h5></td>
-                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
-                      </tr>
-                      <tr>                        
-                        <td>06-10-2022</td>
-                        <td class="text-center"><h5><span class="badge badge-pill badge-danger">validando</span></h5></td>
-                        <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <br> 
+                @if (!$prodes)
+                    <p>No hay prodes cargados</p>
+                @else                    
+                    <table class="table">
+                        <thead>
+                            <tr>                        
+                            <th scope="col">Fecha Creacion</th>
+                            <th scope="col" class="text-center">Estado</th>
+                            <th scope="col" class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($prodes as $item)
+                                @php
+                                    $fechaArr = array_reverse(explode("-",$item->fecha_carga));
+                                    $fecha = $fechaArr[0]."-".$fechaArr[1]."-".$fechaArr[2];
+                                @endphp                                
+                                <tr>                        
+                                <td>{{ $fecha }}</td>
+                                <td class="text-center">
+                                    @if ($item->estado == 0)
+                                        <h5><span class="badge badge-pill badge-danger">validando</span></h5>
+                                    @else    
+                                        <h5><span class="badge badge-pill badge-success">aprobado</span></h5>
+                                    @endif
+                                </td>
+                                <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                @endif                                              
             </div>
             <div class="col-md-1"></div>            
         </div>
@@ -994,46 +1000,17 @@
 
         @if(session('resp') == 'ok')
           <script>
-            
-            // Swal.fire({
-            //   title: 'Se ha registrado correctamente. Ahora puede entrar a nuestra app',
-            //   width: 600,
-            //   padding: '3em',
-            //   color: '#fff',
-            //   // color: '#716add',
-            //   background: '#8c183d url(/images/trees.png)',
-            //   backdrop: `
-            //     rgba(0,0,125,0.4)              
-            //     url("/img/qatar.gif")
-            //     center top
-            //     no-repeat
-            //   `
-            // })
           </script>
         @else
         <script>            
-        //   Swal.fire({
-        //     title: 'El usuario no se pudo registrar intentelo mas tarde.',
-        //     width: 600,
-        //     padding: '3em',
-        //     color: '#fff',
-        //     // color: '#716add',
-        //     background: '#8c183d url(/images/trees.png)',
-        //     backdrop: `
-        //       rgba(0,0,125,0.4)              
-        //       url("/img/qatar.gif")
-        //       center top
-        //       no-repeat
-        //     `
-        //   })
         </script>
         @endif
+
         @if(session('message'))
             <script>
               Swal.fire('<?= session("message"); ?>','Solo queda esperar la aprovación de un admin para que se active.','success');
             </script>
         @endif
-
             
         @yield('footer', View('footer'))
     </body>

@@ -6,6 +6,7 @@ use App\Http\Controllers\OlvidePassController;
 use App\Http\Controllers\ProdeController;
 use App\Models\Equipo;
 use App\Models\Partido;
+use App\Models\Prode;
 use Illuminate\Support\Facades\Route;
 
 
@@ -33,11 +34,12 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('prode', function () {
-    return view('prode');
+    $prodes = Prode::where('id_usuario','=', auth()->user()->id)->get();
+    return view('prode', ['prodes' => $prodes]);
 })->name('prode');
 
 Route::get('fixture', function () {
-    $partidos = Partido::all();
+    $partidos = Partido::paginate(5);
     // var_dump($partidos);    
     // $partidos = $partidos->equipo_2();
     // dd($partidos); 
