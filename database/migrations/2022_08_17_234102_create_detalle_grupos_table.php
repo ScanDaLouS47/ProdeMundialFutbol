@@ -30,7 +30,7 @@ return new class extends Migration
                     ->onDelete('set null');
 
             $table->foreign('id_usuario')
-                    ->references('id')->on('usuarios')
+                    ->references('id')->on('users')
                     ->onDelete('set null');
 
             $table->foreign('id_grupo')

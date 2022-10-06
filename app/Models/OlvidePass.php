@@ -12,6 +12,7 @@ class OlvidePass extends Model
     protected $table = "olvidepass";
 
     public function usuario(){
-        return $this->belongsTo('App\Models\Usuario');
+        return $this->belongsTo(User::class, 'id_usuario','id');
+        // return $this->belongsTo('App\Models\Usuario');
     }
 }

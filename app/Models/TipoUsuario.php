@@ -10,6 +10,7 @@ class TipoUsuario extends Model
     use HasFactory;
 
     public function usuarios(){
-        return $this->hasMany('App\Models\Usuario');
+        return $this->hasMany(User::class, 'id_usuario','id');
+        // return $this->hasMany('App\Models\Usuario');
     }
 }

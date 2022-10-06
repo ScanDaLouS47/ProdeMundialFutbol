@@ -16,12 +16,12 @@ return new class extends Migration
         Schema::create('prodes', function (Blueprint $table) {
             $table->id();
             $table->date('fecha_carga')->nullable(false);
-            $table->date('fecha_aprovacion');
+            $table->date('fecha_aprovacion')->nullable();
             $table->integer('estado');
             $table->unsignedBigInteger('id_usuario')->nullable();
 
             $table->foreign('id_usuario')
-                    ->references('id')->on('usuarios')
+                    ->references('id')->on('users')
                     ->onDelete('set null');
         });
     }

@@ -1,21 +1,22 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\Usuario;
+// use App\Models\Usuario;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
 
     public function index(){        
-        $usuarios = Usuario::orderBy('id', 'desc')->paginate();
+        $usuarios = User::orderBy('id', 'desc')->paginate();
         return view('usuarios', compact('usuarios'));
     }
 
     public function store(Request $req){
-        $usuario = new Usuario();
+        $usuario = new User();
 
-        $usuario->nombre = $req->nombre;
+        $usuario->name = $req->nombre;
         $usuario->dni = $req->dni;
         $usuario->telefono = $req->telefono;
         $usuario->password = md5($req->password);
@@ -29,8 +30,8 @@ class UsuarioController extends Controller
     }
 
     public function login(Request $req){
-        $usuario = Usuario::where('dni', $req->dni)->where('password', md5($req->password))->first();        
-        echo var_dump($usuario);
-        // return redirect()->route('prode');              
+        $usuario = User::where('dni', $req->dni)->where('password', md5($req->password))->first();        
+        // echo var_dump($usuario);
+        return redirect()->route('prode');              
     }
 }
