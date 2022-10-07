@@ -59,7 +59,7 @@
             @else
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-12 col-md-8 bg-success titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
+                    <div class="col-12 col-md-8 bg-success titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->estadio()->nombre_estadio }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
                 </div> 
                 <div class="row partidosProde">
