@@ -956,7 +956,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <h5 class="d-block p-3 bg-dark text-white"><i class="fa-solid fa-table-list mx-2"></i> Mis Prodes</h5>
                     </div>
                 </div> 

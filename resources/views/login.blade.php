@@ -41,16 +41,16 @@
             </div>
             <div class="col-md"></div>            
         </div>
-        @if(url()->previous() == 'http://127.0.0.1:8000/registro')                  
+        @if(url()->previous() == 'http://127.0.0.1:8000/registro' && session('resp'))                          
             @if(session('resp') == 'ok')
               <script>
                 
                 Swal.fire({
-                  title: 'Se ha registrado correctamente. Ahora puede entrar a nuestra app',
+                  // title: 'Se ha registrado correctamente. Ahora puede entrar a nuestra app',
+                  html: '<p class="modalAlertText">Se ha registrado correctamente. Ahora puede entrar a nuestra app.</p>',                  
                   width: 600,
                   padding: '3em',
-                  color: '#fff',
-                  // color: '#716add',
+                  color: '#fff',                                    
                   background: '#8c183d url(/images/trees.png)',
                   backdrop: `
                     rgba(0,0,125,0.4)              
@@ -63,11 +63,11 @@
             @else
             <script>            
               Swal.fire({
-                title: 'El usuario no se pudo registrar intentelo mas tarde.',
+                // title: 'El usuario no se pudo registrar intentelo mas tarde.',
+                html: '<p class="modalAlertText">El usuario no se pudo registrar intentelo mas tarde.</p>',
                 width: 600,
                 padding: '3em',
-                color: '#fff',
-                // color: '#716add',
+                color: '#fff',                
                 background: '#8c183d url(/images/trees.png)',
                 backdrop: `
                   rgba(0,0,125,0.4)              

@@ -4,7 +4,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
   
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-left">
           <li class="nav-item fondoBoton ">
             <a class="nav-link textoMenu" href="{{ route('prode') }}"> <img src="img/botonProde.png" class="margenMenu" alt="">  Prode</a>
           </li>
