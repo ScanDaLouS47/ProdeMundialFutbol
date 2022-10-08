@@ -40,7 +40,7 @@
                       <div class="row">
                         <div class="col"></div>
                         <div class="col-8 offset-md-8 col-md-4">
-                          <a class="textologin" href="">Ya tengo una cuenta</a>
+                          <a class="textologin" href=""><i class="fa fa-user"></i> Ya tengo una cuenta</a>
                         </div>
                         <div class="col"></div>
                       </div>

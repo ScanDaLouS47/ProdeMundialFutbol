@@ -16,41 +16,61 @@
             <table class="table table-striped table-dark">
                 <thead>
                   <tr>
-                    <th scope="col">#PUESTO</th>
+                    <th scope="col" class="text-center">#PUESTO</th>
                     <th scope="col">NOMBRE Y APELLIDO</th>
-                    <th scope="col">PUNTOS</th>
+                    <th scope="col" class="text-center">PUNTOS</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><img src="/img/puesto.png" alt=""></th>
+                    <th scope="row" class="text-center"><img src="/img/puesto.png" alt=""></th>
                     <td>Marcos Vela</td>
-                    <td>30</td>
+                    <td class="text-center">30</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
+                    <th scope="row" class="text-center">2</th>
                     <td>Jacob Carranza</td>
-                    <td>23</td>
+                    <td class="text-center">23</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <th scope="row" class="text-center">3</th>
                     <td>Larry Perez</td>
-                    <td>20</td>
+                    <td class="text-center">20</td>
                   </tr>
                   <tr>
-                    <th scope="row">4</th>
+                    <th scope="row" class="text-center">4</th>
                     <td>Leon Gil</td>
-                    <td>18</td>
+                    <td class="text-center">18</td>
                   </tr>
                   <tr>
-                    <th scope="row">5</th>
+                    <th scope="row" class="text-center">5</th>
                     <td>Maico Beltran</td>
-                    <td>17</td>
+                    <td class="text-center">17</td>
                   </tr>
                   <tr>
-                    <th scope="row">6</th>
+                    <th scope="row" class="text-center">6</th>
                     <td>Mateo Vergara</td>
-                    <td>16</td>
+                    <td class="text-center">16</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-center">7</th>
+                    <td>José Peralta</td>
+                    <td class="text-center">15</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-center">8</th>
+                    <td>Angelo Timoteo</td>
+                    <td class="text-center">13</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-center">9</th>
+                    <td>Vanesa Michalonga</td>
+                    <td class="text-center">10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-center">10</th>
+                    <td>Julio Picapiedra</td>
+                    <td class="text-center">5</td>
                   </tr>
                 </tbody>
               </table></div>

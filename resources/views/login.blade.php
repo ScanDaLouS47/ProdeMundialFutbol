@@ -29,11 +29,11 @@
                   <div class="row">
                     <button type="submit" class="btn btn-block btn-primary">Entrar</button>
                   </div>
-                </form>
+                </form>                
                 <div class="row">
                   <div class="col"></div>
-                  <div class="col-8 offset-md-8 col-md-4">
-                    <a class="textologin" href="{{route('olvidepass')}}">Olvide mi contraseña</a>
+                  <div class="col-8 offset-md-9 col-md-3">
+                    <a class="textologin" href="{{route('olvidepass')}}"><i class="fa fa-lock"></i> Olvide mi contraseña</a>
                   </div>
                   <div class="col"></div>
                 </div>                  

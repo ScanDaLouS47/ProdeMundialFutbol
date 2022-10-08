@@ -6,17 +6,17 @@
   
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item fondoBoton ">
-            <a class="nav-link textoMenu" href="#"> <img src="img/botonProde.png" class="margenMenu" alt="">  Prode</a>
+            <a class="nav-link textoMenu" href="{{ route('prode') }}"> <img src="img/botonProde.png" class="margenMenu" alt="">  Prode</a>
           </li>
           <li class="nav-item fondoBoton">
-              <a class="nav-link textoMenu" href="#"><img src="img/botonFixture.png" class="margenMenu" alt="">  Fixture</a>
+              <a class="nav-link textoMenu" href="{{ route('fixture') }}"><img src="img/botonFixture.png" class="margenMenu" alt="">  Fixture</a>
             </li>
             <li class="nav-item fondoBoton ">
-              <a class="nav-link textoMenu" href="#"> <img src="img/botonRanking.png" class="margenMenu" alt="">  Ranking</a>
+              <a class="nav-link textoMenu" href="{{ route('ranking') }}"> <img src="img/botonRanking.png" class="margenMenu" alt="">  Ranking</a>
             </li>
-            <li class="nav-item fondoBoton ">
-              <a class="nav-link textoMenu" href="#"> <img src="img/botonUsuario.png" class="margenMenu" alt="">  Usuario</a>
-            </li>
+            {{-- <li class="nav-item fondoBoton ">
+              <a class="nav-link textoMenu" href="#"> <img src="img/botonUsuario.png" class="margenMenu" alt="">  Perfil</a>
+            </li> --}}
       </ul>
   </div>
 </nav>

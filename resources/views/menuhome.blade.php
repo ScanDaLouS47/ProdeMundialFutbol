@@ -6,10 +6,10 @@
     
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item ">
-            <a class="nav-link textoMenu" href="#"> <img src="img/botonRegistro.png" alt=""> Registrarse</a>
+            <a class="nav-link textoMenu" href="{{ route('registro') }}"> <img src="img/botonRegistro.png" alt=""> Registrarse</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link textoMenu" href="#"><img src="img/botonEntrar.png" alt=""> Entrar</a>
+              <a class="nav-link textoMenu" href="{{ route('login') }}"><img src="img/botonEntrar.png" alt=""> Entrar</a>
             </li>
       </ul>
   </div>

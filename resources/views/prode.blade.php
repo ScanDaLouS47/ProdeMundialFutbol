@@ -61,18 +61,18 @@
                                 <br>
                                 <div class="row partidosProde" style="margin-bottom: 12px;">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/ecuador.gif" class="imgBandera">
+                                        <img src="./img/banderas/qatar.gif" class="imgBandera">
                                     </div>
-                                    <div class="col-12 col-md-3  nombreEquipos"> ECUADOR</div>
+                                    <div class="col-12 col-md-3  nombreEquipos"> QATAR</div>
                                     <div class="col-12 col-md-2  ">
                                         <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
                                         <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
                                     </div>
-                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">QATAR</div>  
+                                    <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ECUADOR</div>  
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/qatar.gif" class="imgBandera">
+                                        <img src="./img/banderas/ecuador.gif" class="imgBandera">
                                     </div>       
                                 </div>
                                 <div class="row partidosProde">
@@ -296,7 +296,7 @@
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ARABIA SAUDITA</div>    
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/arabia-saudita.gif" class="imgBandera">
+                                        <img src="./img/banderas/arabia_saudita.gif" class="imgBandera">
                                     </div>     
                                 </div>
                                 <div class="row partidosProde">
@@ -317,7 +317,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/arabia-saudita.gif" class="imgBandera">
+                                        <img src="./img/banderas/arabia_saudita.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARABIA SAUDITA</div>
                                     <div class="col-12 col-md-2  ">
@@ -365,7 +365,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/arabia-saudita.gif" class="imgBandera">
+                                        <img src="./img/banderas/arabia_saudita.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARABIA SAUDITA</div>
                                     <div class="col-12 col-md-2  ">
@@ -413,7 +413,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/franc.gif" class="imgBandera">
+                                        <img src="./img/banderas/francia.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
@@ -445,7 +445,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/franc.gif" class="imgBandera">
+                                        <img src="./img/banderas/francia.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
@@ -477,7 +477,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/franc.gif" class="imgBandera">
+                                        <img src="./img/banderas/francia.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
@@ -486,7 +486,7 @@
                                     <div class="col-12 col-md-2 "> 
                                         <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
                                     </div>
-                                    <div class="col-12 col-md-3  nombreEquipos">TUNEZ</div>  
+                                    <div class="col-12 col-md-3 textoSegundoEquipo nombreEquipos">TUNEZ</div>  
                                     <div class="col-12 col-md-1 ">
                                         <img src="./img/banderas/tunez.gif" class="imgBandera">
                                     </div>       
@@ -923,7 +923,7 @@
                                 </div>
                                 <div class="row partidosProde">
                                     <div class="col-12 col-md-1 ">
-                                        <img src="./img/banderas/inglaterra.gif" class="imgBandera">
+                                        <img src="./img/banderas/ghana.gif" class="imgBandera">
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">GHANA </div>
                                     <div class="col-12 col-md-2  ">
