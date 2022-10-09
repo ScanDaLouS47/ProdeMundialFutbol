@@ -100,9 +100,16 @@
             @endif 
         @endforeach        
 
-        <div class="d-flex justify-content-center pagination-lg">
-            {!! $partidos->links() !!}
+        <div class="row">
+            <div class="col-12 offset-md-2 col-md-8">
+                <div class="d-flex justify-content-center pagination-sm">
+                    {!! $partidos->links() !!}
+                </div>
+            </div>
         </div>
+        {{-- <div class="d-flex justify-content-center pagination-lg">
+            {!! $partidos->links() !!}
+        </div> --}}
 
         @if(session('resp') == 'ok')
           <script>
@@ -110,7 +117,7 @@
         @else
         <script>            
         </script>
-        @endif
+        @endif        
             
         @yield('footer', View('footer'))
     </body>

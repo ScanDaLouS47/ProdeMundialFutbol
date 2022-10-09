@@ -987,7 +987,7 @@
                                         <h5><span class="badge badge-pill badge-success">aprobado</span></h5>
                                     @endif
                                 </td>
-                                <td class="text-center"><h5><i class="fa-solid fa-pen-to-square"></i></h5></td>
+                                <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-pen-to-square" onclick="btnEdit()"></i></h5></td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -1011,6 +1011,12 @@
               Swal.fire('<?= session("message"); ?>','Solo queda esperar la aprovación de un admin para que se active.','success');
             </script>
         @endif
+
+        <script>
+            const btnEdit = () => {
+                Swal.fire('','Esta función esta en proceso de desarrollo. Disculpe las molestias.','info');
+            }
+        </script>
             
         @yield('footer', View('footer'))
     </body>
