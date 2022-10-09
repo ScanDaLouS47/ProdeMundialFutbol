@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('pronosticos', function (Blueprint $table) {
+            $table->id();
+            $table->integer('goles_equipo_1');
+            $table->integer('goles_equipo_2');
+            $table->unsignedBigInteger('id_partido')->nullable();
+            $table->foreign('id_partido')
+                    ->references('id')->on('partidos')
+                    ->onDelete('set null');
+            $table->unsignedBigInteger('id_prode')->nullable();
+            $table->foreign('id_prode')
+                    ->references('id')->on('prodes')
+                    ->onDelete('set null');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('pronosticos');
+    }
+};

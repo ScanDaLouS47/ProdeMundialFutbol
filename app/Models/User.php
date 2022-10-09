@@ -12,11 +12,25 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    // Relacion uno a muchos
+    public function prodes(){
+        return $this->hasMany('App\Models\Prode');
+    }
+
+    public function detalle_grupo(){
+        return $this->hasMany('App\Models\DetalleProde');
+    }
+
+    public function tipo_usuario(){
+        return $this->belongsTo('App\Models\TipoUsuario');
+    }
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+
     protected $fillable = [
         'name',
         'email',
