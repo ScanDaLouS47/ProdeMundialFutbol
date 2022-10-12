@@ -1,5 +1,13 @@
 {
     "private": true,
+    "name": "prode2022-arg",
+    "description": "app prode",
+    "version": "0.0.1",
+    "engines": {
+        "node": "16.14.1",
+        "npm": "8.5.4"
+    },
+    "postinstall": "npm run production",
     "scripts": {
         "start": "node index.js",
         "dev": "vite",
@@ -20,12 +28,5 @@
     "dependencies": {
         "aos": "^2.3.4",
         "autoprefixer": "10.4.5"
-    },
-    "name": "prode2022-arg",
-    "description": "app prode",
-    "version": "0.0.1",
-    "engines": {
-        "node": "16.14.1",
-        "npm": "8.5.4"
     }
 }
