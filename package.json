@@ -9,7 +9,7 @@
     },
     "postinstall": "npm run production",
     "scripts": {
-        "start": "node index.js",
+        "start": "vite build",
         "dev": "vite",
         "build": "webpack"
     },
