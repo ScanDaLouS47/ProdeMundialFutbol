@@ -30,6 +30,7 @@
                     <button type="submit" class="btn btn-block btn-primary">Entrar</button>
                   </div>
                 </form>                
+                <br>
                 <div class="row">
                   <div class="col"></div>
                   <div class="col-8 offset-md-9 col-md-3">

@@ -29,10 +29,10 @@
          <div class="col-12 col-md-4">
             <div class="row">
                <div class="col-6 col-md-6">
-                  <button type="button" class="text-white btn btn-lg  btn-block" style="background-color:#8c183d">Registrarse</button>
+                  <button type="button" class="text-white btn btn-lg  btn-block" style="background-color:#8c183d" onclick="window.location='{{ route('registro') }}'">Registrarse</button>
                </div>
                <div class="col-6 col-md-6">
-                  <button type="button" class=" text-white btn btn-lg  btn-block" style="background-color:#8c183d">Ingresar</button>
+                  <button type="button" class=" text-white btn btn-lg  btn-block" style="background-color:#8c183d" onclick="window.location='{{ route('login') }}'">Ingresar</button>
                </div>
             
             </div>
