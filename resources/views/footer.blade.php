@@ -12,7 +12,7 @@
             <br>
             <a class="textoFooter "  href="https://web.whatsapp.com/"> <img class="margenMenu" src="img/botonWs.png" >+54 9 3571 56-2946</a>
             <br>
-            <a class="textoFooter" href="https://es-la.facebook.com/"> <img class="margenMenu" src="img/botonface.png">nerotetor</a>
+            <a class="textoFooter" href="https://es-la.facebook.com/"> <img class="margenMenu" src="img/botonFace.png">nerotetor</a>
           </div>
         </div>
         <div class="row">
