@@ -152,6 +152,34 @@ a {
     color: #FFFFFF;
 }
 
+/* ////////////////////////////////////////////////// */
+.iconoHome{
+    width: 60px;
+    height: 60px;
+}
+
+.tituloHome{
+    font-family: 'Abyssinica SIL', serif;
+    margin: 20px;
+}
+
+.tituloDetalleHome{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textoDetalleHome{
+    /* font-family: 'Alkalami', serif; */
+    font-size: 24px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.modalAlertText{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
 @media only screen and (max-width: 720px) {
     .textoSegundoEquipo{
         text-align: center;        
@@ -182,6 +210,15 @@ a {
 
     .titulosFixture{
         font-size: 26px;
+        text-align: center;
+    }
+
+    .tituloDetalleHome{
+        text-align: center;
+        margin-top: 20px;        
+    }
+
+    .textoFooter{
         text-align: center;
     }
 }
@@ -294,28 +331,3 @@ background-image: -webkit-gradient(
   content: normal;
 }
 
-/* ////////////////////////////////////////////////// */
-.iconoHome{
-    width: 60px;
-    height: 60px;
-}
-
-.tituloHome{
-    font-family: 'Abyssinica SIL', serif;
-    margin: 20px;
-}
-
-.tituloDetalleHome{
-    font-family: 'Open Sans', sans-serif;
-}
-
-.textoDetalleHome{
-    /* font-family: 'Alkalami', serif; */
-    font-size: 24px;
-    font-family: 'Gemunu Libre', sans-serif;
-}
-
-.modalAlertText{
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
