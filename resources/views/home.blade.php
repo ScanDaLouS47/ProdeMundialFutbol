@@ -191,47 +191,12 @@
             </div>
          </div>
        </div>
+       <br>
+       <br>
 
-       <div class="row">
-         <div class="col-12 offset-md-4 col-md-4">
-            <h2 class="text-center tituloHome">Qatar 2022</h2>
-         </div>
-       </div>
+       
 
-       <div class="row p-4">
-          <div class="card col-md-6 px-0" style="width: 18rem;">
-            <img src="img/imghome/sedes.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sedes</h5>
-              <p class="card-text">Catar hasta la actualidad confirmó ocho estadios en cinco ciudades para el mundial:
-               Al Wakrah,
-                Doha, Rayán,
-                 Jor y Lusail,
-                  todas ellas albergarán los 64 partidos de la Copa Mundial.</p>
-            </div>
-          </div>
-          <div class="card col-md-6 px-0" style="width: 18rem;">
-            <img src="img/imghome/mascota.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mascota</h5>
-              <p class="card-text">La mascota oficial del Mundial de Catar 2022 es La'eeb que fue presentado el 1 de abril de 2022 en el sorteo para definir los grupos.</p>
-            </div>
-          </div>
-          <div class="card col-md-6 px-0" style="width: 18rem;">
-            <img src="img/imghome/cancion.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Canción oficial</h5>
-              <p class="card-text">El 1 de abril de 2022 se lanzó la canción oficial del mundial llamado «Hayya Hayya (Better Together)» interpretado por el cantante estadounidense Trinidad Cardona con la participación del ícono del afrobeats Davido y AISHA.</p>
-            </div>
-          </div>
-          <div class="card col-md-6 px-0" style="width: 18rem;">
-            <img src="img/imghome/pelota_qatar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Balón oficial</h5>
-              <p class="card-text">Al Rihla es el nombre oficial del balón para el torneo.</p>
-            </div>
-          </div>
-       </div>
+       
 
         @yield('footer', View('footer'))
         <script>         

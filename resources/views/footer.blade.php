@@ -8,12 +8,11 @@
         </div>
         <hr>        
         <div class="row">
-          <div class="col-md-4">
-            <a class="textoFooter "  href=""> <img class="margenMenu" src="img/botonMail.png" >Hectorarguello.prac@gmail.com  </a> 
+          <div class="col-md-4"> 
+            <a class="textoFooter "><i class="fa fa-user"></i>    Hector Arguello </a>
             <br>
             <a class="textoFooter "  href="https://web.whatsapp.com/"> <img class="margenMenu" src="img/botonWs.png" >3571 56-2946</a>
             <br>
-            <a class="textoFooter" href="https://es-la.facebook.com/"> <img class="margenMenu" src="img/botonFace.png">nerotetor</a>
           </div>
         </div>
         <br>
