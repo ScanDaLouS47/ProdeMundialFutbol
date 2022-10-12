@@ -41,7 +41,7 @@
             </div>
             <div class="col-md"></div>            
         </div>
-        @if(url()->previous() == 'http://127.0.0.1:8000/registro' && session('resp'))                          
+        @if(url()->previous()->routeIs('registro') && session('resp'))                          
             @if(session('resp') == 'ok')
               <script>
                 
