@@ -41,7 +41,7 @@
             </div>
             <div class="col-md"></div>            
         </div>
-        @if(url()->previous() == '{{ route('registro') }}' && session('resp'))                          
+        @if(url()->previous() == route('registro') && session('resp'))                          
             @if(session('resp') == 'ok')
               <script>
                 
