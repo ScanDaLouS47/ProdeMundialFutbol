@@ -25,11 +25,14 @@
             <div class="col-12 col-md"></div>
             <div class="col-md-4">
                 <select class="custom-select">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                    <option value="0" selected>-Seleccione el partido-</option>                   
+                    @foreach ($partidos as $partido)   
+                        @php                                                
+                            $fecha = explode("-",$partido->fecha);                                         
+                         @endphp                        
+                        <option value="{{ $partido->id }}">{{ $partido->equipo_1->nombre_equipo }} vs {{ $partido->equipo_2->nombre_equipo }} ({{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }})</option>
+                    @endforeach
+                </select>
             </div>
             <div class="col-md"></div>
         </div>       

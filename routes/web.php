@@ -71,7 +71,7 @@ Route::get('admin', function () {
 
 Route::get('resultados', function () {
     $hoy = date('Y-m-d');
-    $partidos = Partido::where('fecha','<=', $hoy)->get();
+    $partidos = Partido::where('fecha','>=', $hoy)->orderBy('fecha')->get();
     return view('resultados', ['partidos' => $partidos]);    
 })->name('resultados');
 
