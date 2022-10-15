@@ -70,7 +70,9 @@ Route::get('admin', function () {
 })->name('admin');
 
 Route::get('resultados', function () {
-    return view('resultados');
+    $hoy = date('Y-m-d');
+    $partidos = Partido::where('fecha','<=', $hoy)->get();
+    return view('resultados', ['partidos' => $partidos]);    
 })->name('resultados');
 
 Route::post('olvidepass', [OlvidePassController::class, 'olvidepass'])->name('olvidepass');
