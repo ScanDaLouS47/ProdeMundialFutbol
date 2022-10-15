@@ -65,6 +65,14 @@ Route::get('olvidepass', function () {
     return view('olvidepass');
 })->name('olvidepass');
 
+Route::get('admin', function () {
+    return view('admin');
+})->name('admin');
+
+Route::get('resultados', function () {
+    return view('resultados');
+})->name('resultados');
+
 Route::post('olvidepass', [OlvidePassController::class, 'olvidepass'])->name('olvidepass');
 
 Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
