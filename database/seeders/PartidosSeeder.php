@@ -303,7 +303,7 @@ class PartidosSeeder extends Seeder
         $user = Partido::create([
             'fecha' => '2022-12-01',
             'hora' => '12:00',
-            'id_equipo_1' => 5,
+            'id_equipo_1' => 8,
             'id_equipo_2' => 23,
             'id_estadio' => 1,
             'estado' => 1
