@@ -177,10 +177,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">INGLATERRA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-7-1" value="{{ old('p-7-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-7-2" value="{{ old('p-7-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">IRAN</div>   
                                     <div class="col-12 col-md-1 ">
@@ -193,10 +193,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">EE.UU</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-8-1" value="{{ old('p-8-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-8-2" value="{{ old('p-8-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GALES</div>  
                                     <div class="col-12 col-md-1 ">
@@ -209,10 +209,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">IRAN</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-9-1" value="{{ old('p-9-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-9-2" value="{{ old('p-9-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GALES</div>     
                                     <div class="col-12 col-md-1 ">
@@ -225,10 +225,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">INGLATERRA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-10-1" value="{{ old('p-10-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-10-2" value="{{ old('p-10-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">EE.UU</div> 
                                     <div class="col-12 col-md-1 ">
@@ -241,10 +241,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">INGLATERRA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-11-1" value="{{ old('p-11-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-11-2" value="{{ old('p-11-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GALES</div>         
                                     <div class="col-12 col-md-1 ">
@@ -257,10 +257,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">IRAN</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-12-1" value="{{ old('p-12-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-12-2" value="{{ old('p-12-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">EE.UU</div>   
                                     <div class="col-12 col-md-1 ">
@@ -289,10 +289,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARGENTINA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-13-1" value="{{ old('p-13-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-13-2" value="{{ old('p-13-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ARABIA SAUDITA</div>    
                                     <div class="col-12 col-md-1 ">
@@ -305,10 +305,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">MEXICO</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-14-1" value="{{ old('p-14-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-14-2" value="{{ old('p-14-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">POLONIA</div>  
                                     <div class="col-12 col-md-1 ">
@@ -321,10 +321,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARABIA SAUDITA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-15-1" value="{{ old('p-15-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-15-2" value="{{ old('p-15-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">POLONIA</div>  
                                     <div class="col-12 col-md-1 ">
@@ -337,10 +337,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARGENTINA </div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-16-1" value="{{ old('p-16-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-16-2" value="{{ old('p-16-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MEXICO</div>     
                                     <div class="col-12 col-md-1 ">
@@ -353,10 +353,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARGENTINA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-17-1" value="{{ old('p-17-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-17-2" value="{{ old('p-17-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">POLONIA</div>  
                                     <div class="col-12 col-md-1 ">
@@ -369,10 +369,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ARABIA SAUDITA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-18-1" value="{{ old('p-18-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-18-2" value="{{ old('p-18-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MEXICO</div>     
                                     <div class="col-12 col-md-1 ">
@@ -401,10 +401,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">DINAMARCA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-19-1" value="{{ old('p-19-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-19-2" value="{{ old('p-19-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">TUNEZ</div>   
                                     <div class="col-12 col-md-1 ">
@@ -417,10 +417,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-20-1" value="{{ old('p-20-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-20-2" value="{{ old('p-20-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">AUSTRALIA</div>  
                                     <div class="col-12 col-md-1 ">
@@ -433,10 +433,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">AUSTRALIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-21-1" value="{{ old('p-21-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-21-2" value="{{ old('p-21-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">TUNEZ</div>      
                                     <div class="col-12 col-md-1 ">
@@ -449,10 +449,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-22-1" value="{{ old('p-22-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-22-2" value="{{ old('p-22-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">DINAMARCA</div>    
                                     <div class="col-12 col-md-1 ">
@@ -465,10 +465,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">AUSTRALIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-23-1" value="{{ old('p-23-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-23-2" value="{{ old('p-23-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">DINAMARCA</div>   
                                     <div class="col-12 col-md-1 ">
@@ -481,10 +481,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">FRANCIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-24-1" value="{{ old('p-24-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-24-2" value="{{ old('p-24-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3 textoSegundoEquipo nombreEquipos">TUNEZ</div>  
                                     <div class="col-12 col-md-1 ">
@@ -513,10 +513,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ALEMANIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-25-1" value="{{ old('p-25-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-25-2" value="{{ old('p-25-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
                                     <div class="col-12 col-md-1 ">
@@ -529,10 +529,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-26-1" value="{{ old('p-26-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-26-2" value="{{ old('p-26-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COSTA RICA</div>    
                                     <div class="col-12 col-md-1 ">
@@ -545,10 +545,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-27-1" value="{{ old('p-27-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-27-2" value="{{ old('p-27-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>  
                                     <div class="col-12 col-md-1 ">
@@ -561,10 +561,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ESPAÑA </div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-28-1" value="{{ old('p-28-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-28-2" value="{{ old('p-28-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div>   
                                     <div class="col-12 col-md-1 ">
@@ -577,10 +577,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">ESPAÑA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-29-1" value="{{ old('p-29-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-29-2" value="{{ old('p-29-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">JAPON</div>       
                                     <div class="col-12 col-md-1 ">
@@ -593,10 +593,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">COSTA RICA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-30-1" value="{{ old('p-30-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-30-2" value="{{ old('p-30-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ALEMANIA</div> 
                                     <div class="col-12 col-md-1 ">
@@ -624,10 +624,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">MARRUECOS</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                    <input type="number" style="width: 100%" name="p-31-1" value="{{ old('p-31-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                    <input type="number" style="width: 100%" name="p-31-2" value="{{ old('p-31-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>         
                                 <div class="col-12 col-md-1 ">
@@ -640,10 +640,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                    <input type="number" style="width: 100%" name="p-32-1" value="{{ old('p-32-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                    <input type="number" style="width: 100%" name="p-32-2" value="{{ old('p-32-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CANADA</div> 
                                 <div class="col-12 col-md-1 ">
@@ -656,10 +656,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                    <input type="number" style="width: 100%" name="p-33-1" value="{{ old('p-33-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                    <input type="number" style="width: 100%" name="p-33-2" value="{{ old('p-33-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>  
                                 <div class="col-12 col-md-1 ">
@@ -672,10 +672,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                    <input type="number" style="width: 100%" name="p-34-1" value="{{ old('p-34-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                    <input type="number" style="width: 100%" name="p-34-2" value="{{ old('p-34-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
                                 <div class="col-12 col-md-1 ">
@@ -688,10 +688,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">BELGICA</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                    <input type="number" style="width: 100%" name="p-35-1" value="{{ old('p-35-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                    <input type="number" style="width: 100%" name="p-35-2" value="{{ old('p-35-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CROACIA</div>  
                                 <div class="col-12 col-md-1 ">
@@ -704,10 +704,10 @@
                                 </div>
                                 <div class="col-12 col-md-3  nombreEquipos">CANADA</div>
                                 <div class="col-12 col-md-2  ">
-                                    <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                    <input type="number" style="width: 100%" name="p-36-1" value="{{ old('p-36-1') }}">
                                 </div>
                                 <div class="col-12 col-md-2 "> 
-                                    <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                    <input type="number" style="width: 100%" name="p-36-2" value="{{ old('p-36-2') }}">
                                 </div>
                                 <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">MARRUECOS</div>   
                                 <div class="col-12 col-md-1 ">
@@ -735,10 +735,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">SUIZA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-37-1" value="{{ old('p-37-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-37-2" value="{{ old('p-37-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>     
                                     <div class="col-12 col-md-1 ">
@@ -751,10 +751,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-38-1" value="{{ old('p-38-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-38-2" value="{{ old('p-38-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SERBIA</div> 
                                     <div class="col-12 col-md-1 ">
@@ -767,10 +767,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-39-1" value="{{ old('p-39-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-39-2" value="{{ old('p-39-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div>         
                                     <div class="col-12 col-md-1 ">
@@ -783,10 +783,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-40-1" value="{{ old('p-40-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-40-2" value="{{ old('p-40-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>   
                                     <div class="col-12 col-md-1 ">
@@ -799,10 +799,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">BRASIL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-41-1" value="{{ old('p-41-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-41-2" value="{{ old('p-41-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">CAMERUN</div> 
                                     <div class="col-12 col-md-1 ">
@@ -815,10 +815,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">SERBIA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-42-1" value="{{ old('p-42-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-42-2" value="{{ old('p-42-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">SUIZA</div>     
                                     <div class="col-12 col-md-1 ">
@@ -847,10 +847,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">URUGUAY</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
+                                        <input type="number" style="width: 100%" name="p-43-1" value="{{ old('p-43-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-43-2" value="{{ old('p-43-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>   
                                     <div class="col-12 col-md-1 ">
@@ -863,10 +863,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-2-1" value="{{ old('p-2-1') }}">
+                                        <input type="number" style="width: 100%" name="p-44-1" value="{{ old('p-44-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-2-2" value="{{ old('p-2-2') }}">
+                                        <input type="number" style="width: 100%" name="p-44-2" value="{{ old('p-44-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">GHANA</div>   
                                     <div class="col-12 col-md-1 ">
@@ -879,10 +879,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">GHANA</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-3-1" value="{{ old('p-3-1') }}">
+                                        <input type="number" style="width: 100%" name="p-45-1" value="{{ old('p-45-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-3-2" value="{{ old('p-3-2') }}">
+                                        <input type="number" style="width: 100%" name="p-45-2" value="{{ old('p-45-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>
                                     <div class="col-12 col-md-1 ">
@@ -895,10 +895,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-4-1" value="{{ old('p-4-1') }}">
+                                        <input type="number" style="width: 100%" name="p-46-1" value="{{ old('p-46-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-4-2" value="{{ old('p-4-2') }}">
+                                        <input type="number" style="width: 100%" name="p-46-2" value="{{ old('p-46-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>    
                                     <div class="col-12 col-md-1 ">
@@ -911,10 +911,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">PORTUGAL</div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-5-1" value="{{ old('p-5-1') }}">
+                                        <input type="number" style="width: 100%" name="p-47-1" value="{{ old('p-47-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-5-2" value="{{ old('p-5-2') }}">
+                                        <input type="number" style="width: 100%" name="p-47-2" value="{{ old('p-47-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">COREA DEL SUR</div>  
                                     <div class="col-12 col-md-1 ">
@@ -927,10 +927,10 @@
                                     </div>
                                     <div class="col-12 col-md-3  nombreEquipos">GHANA </div>
                                     <div class="col-12 col-md-2  ">
-                                        <input type="number" style="width: 100%" name="p-6-1" value="{{ old('p-6-1') }}">
+                                        <input type="number" style="width: 100%" name="p-48-1" value="{{ old('p-48-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-6-2" value="{{ old('p-6-2') }}">
+                                        <input type="number" style="width: 100%" name="p-48-2" value="{{ old('p-48-2') }}">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">URUGUAY</div>   
                                     <div class="col-12 col-md-1 ">
