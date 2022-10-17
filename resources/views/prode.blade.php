@@ -13,11 +13,12 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-12 col-md-10">
-                @if ($errors->any())
+                {{-- @if ($errors->any()) --}}
+                @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul>
                             <li style="margin-left: 2%;">
-                                <p>Debe completar todos los partidos de todos los grupos.</p>
+                                <p>Debe completar todos los partidos de todos los grupos. {{ $errors }}</p>
                             </li>
                         </ul>                        
                     </div>
@@ -68,7 +69,7 @@
                                         <input type="number" style="width: 100%" name="p-1-1" value="{{ old('p-1-1') }}">
                                     </div>
                                     <div class="col-12 col-md-2 "> 
-                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}">
+                                        <input type="number" style="width: 100%" name="p-1-2" value="{{ old('p-1-2') }}" id="p-1-2">
                                     </div>
                                     <div class="col-12 col-md-3  textoSegundoEquipo nombreEquipos">ECUADOR</div>  
                                     <div class="col-12 col-md-1 ">
