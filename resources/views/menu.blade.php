@@ -5,6 +5,9 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
   
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-left">
+          <li class="nav-item fondoBoton">
+            <a class="nav-link textoMenu text-success" href="#"> <img src="img/botonUsuario.png" class="margenMenu" alt="">  {{ Auth::user()->name }}</a>
+          </li>
           <li class="nav-item fondoBoton ">
             <a class="nav-link textoMenu" href="{{ route('prode') }}"> <img src="img/botonProde.png" class="margenMenu" alt="">  Prode</a>
           </li>
@@ -14,9 +17,9 @@
             <li class="nav-item fondoBoton ">
               <a class="nav-link textoMenu" href="{{ route('ranking') }}"> <img src="img/botonRanking.png" class="margenMenu" alt="">  Ranking</a>
             </li>
-            {{-- <li class="nav-item fondoBoton ">
-              <a class="nav-link textoMenu" href="#"> <img src="img/botonUsuario.png" class="margenMenu" alt="">  Perfil</a>
-            </li> --}}
+            <li class="nav-item fondoBoton ">
+              <a class="nav-link textoMenu" href="{{ route('logout') }}"> <i class="fa fa-sign-out-alt"></i>  Salir</a>
+            </li>
       </ul>
   </div>
 </nav>

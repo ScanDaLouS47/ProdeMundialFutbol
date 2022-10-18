@@ -7,6 +7,7 @@ use App\Http\Controllers\ProdeController;
 use App\Models\Equipo;
 use App\Models\Partido;
 use App\Models\Prode;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
@@ -36,7 +37,7 @@ Route::get('login', function () {
 Route::get('prode', function () {
     $prodes = Prode::where('id_usuario','=', auth()->user()->id)->get();
     return view('prode', ['prodes' => $prodes]);
-})->name('prode');
+})->middleware('auth')->name('prode');
 
 Route::get('fixture', function () {
     $partidos = Partido::paginate(5);
@@ -85,6 +86,11 @@ Route::post('login', [LoginController::class, 'index'])->name('login.index');
 
 Route::post('prode', [ProdeController::class, 'index'])->name('prode.index');
 
+
+Route::get('logout', function () {
+    Auth::logout();
+    return view('login');
+})->name('logout');
 
 Route::get('*', function () {
     return view('not_found');
