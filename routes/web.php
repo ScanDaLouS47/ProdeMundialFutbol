@@ -52,15 +52,15 @@ Route::get('fixture', function () {
     // dd($partidos->equipo);   
     // var_dump($partidos);
     return view('fixture', ['partidos' => $partidos]);
-})->name('fixture');
+})->middleware('auth')->name('fixture');
 
 Route::get('ranking', function () {
     return view('ranking');
-})->name('ranking');
+})->middleware('auth')->name('ranking');
 
 Route::get('perfil', function () {
     return view('perfil');
-})->name('perfil');
+})->middleware('auth')->name('perfil');
 
 Route::get('olvidepass', function () {
     return view('olvidepass');
@@ -68,29 +68,29 @@ Route::get('olvidepass', function () {
 
 Route::get('admin', function () {
     return view('admin');
-})->name('admin');
+})->middleware('auth')->name('admin');
 
 Route::get('resultados', function () {
     $hoy = date('Y-m-d');
     $partidos = Partido::where('fecha','>=', $hoy)->orderBy('fecha')->get();
     return view('resultados', ['partidos' => $partidos]);    
-})->name('resultados');
+})->middleware('auth')->name('resultados');
 
 Route::post('olvidepass', [OlvidePassController::class, 'olvidepass'])->name('olvidepass');
 
-Route::get('usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
+Route::get('usuarios', [UsuarioController::class, 'index'])->middleware('auth')->name('usuarios.index');
 
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
 
 Route::post('login', [LoginController::class, 'index'])->name('login.index');
 
-Route::post('prode', [ProdeController::class, 'index'])->name('prode.index');
+Route::post('prode', [ProdeController::class, 'index'])->middleware('auth')->name('prode.index');
 
 
 Route::get('logout', function () {
     Auth::logout();
     return view('login');
-})->name('logout');
+})->middleware('auth')->name('logout');
 
 Route::get('*', function () {
     return view('not_found');
