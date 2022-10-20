@@ -10,10 +10,10 @@
     <body class="antialiased">        
         @yield('menu', View('menu'))  
         <br>        
-        @foreach ($partidos as $partido)        
+        @foreach ($partidos as $partido)                    
             @php                                                
                 $fecha = explode("-",$partido->fecha);
-                $hoy = Carbon\Carbon::now();                
+                $hoy = Carbon\Carbon::now();            
             @endphp            
             @if ($partido->fecha > $hoy)                
                 <div class="row partidosProde">
@@ -34,9 +34,17 @@
                         </div>
                     </div>
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado bg-dark" type="number" value="" readonly></div>
+                        @if ($partido->resultado)
+                            <input class="golesResultado bg-dark text-white" type="text" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
+                        @else
+                            <input class="golesResultado bg-dark text-white" type="text" value="" readonly></div>
+                        @endif                        
                     <div class="col-md-1 bg-danger">
-                        <input class="golesResultado bg-dark" type="number" value="" readonly></div>
+                        @if ($partido->resultado)
+                            <input class="golesResultado bg-dark text-white" type="text" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>
+                        @else
+                            <input class="golesResultado bg-dark text-white" type="text" value="" readonly></div>
+                        @endif                                             
                     <div class="col-md-3 ">
                         <div class="row">                                                      
                             <div class="col-md-9 nombreEquipos centrarNombres">
@@ -75,9 +83,17 @@
                         </div>                        
                     </div>
                     <div class="col-md-1 bg-success">
-                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
+                        @if ($partido->resultado)
+                            <input class="golesResultado bg-dark text-white" type="text" value="{{ $partido->resultado->goles_equipo_1 }}" readonly></div>
+                        @else
+                            <input class="golesResultado bg-dark text-white" type="text" value="" readonly></div>
+                        @endif                           
                     <div class="col-md-1 bg-success">
-                        <input class="golesResultado" type="number" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>                    
+                        @if ($partido->resultado)
+                            <input class="golesResultado bg-dark text-white" type="text" value="{{ $partido->resultado->goles_equipo_2 }}" readonly></div>
+                        @else
+                            <input class="golesResultado bg-dark text-white" type="text" value="" readonly></div>
+                        @endif                     
                     <div class="col-md-3 ">
                         <div class="row">                            
                             <div class="col-md-9 nombreEquipos centrarNombres">
