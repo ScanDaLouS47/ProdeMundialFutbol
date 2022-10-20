@@ -9,15 +9,17 @@ class Resultado extends Model
 {
     use HasFactory;   
 
+    public $timestamps = false;
+
     public function detalle_prode(){
-        return $this->hasMany('App\Models\DetalleProde');
+        return $this->hasMany(DetalleProde::class, 'id_resultado','id');
     }
 
-    public function equipo_ganador(){
-        return $this->belongsTo('App\Models\Equipo');
-    }
+    // public function equipo_ganador(){
+    //     return $this->belongsTo(Equipo::class, 'id_usuario','id');
+    // }
 
     public function partido(){
-        return $this->belongsTo('App\Models\Partido');
+        return $this->belongsTo(Partido::class, 'id_partido','id');
     }
 }

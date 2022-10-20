@@ -9,11 +9,13 @@ class DetalleProde extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function prode(){
-        return $this->belongsTo('App\Models\Prode');
+        return $this->belongsTo(Prode::class, 'id_prode','id');
     }
 
     public function resultado(){
-        return $this->belongsTo('App\Models\Resultado');
+        return $this->belongsTo(Resultado::class, 'id_resultado','id');
     }
 }

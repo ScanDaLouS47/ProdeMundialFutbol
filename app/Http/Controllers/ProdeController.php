@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DetalleProde;
 use App\Models\Partido;
 use App\Models\Prode;
 use App\Models\Pronostico;
+use App\Models\Resultado;
 use Illuminate\Http\Request;
 
 class ProdeController extends Controller
@@ -64,5 +66,54 @@ class ProdeController extends Controller
         $pronostico->save();
         $message = 'Se actualizo el pronostico.';
         return redirect()->route('prode')->with('messagepron', $message);        
+    }
+
+    public function cargaresultado(Request $req){
+        if($req->id_partido == 0){
+            $messageError = 'Debe seleccionar un partido.';
+            return redirect()->route('resultados')->with('messageError', $messageError);  
+        }else{
+            $resultado = new Resultado();
+            $resultado->goles_equipo_1 = $req->Equipo1;
+            $resultado->goles_equipo_2 = $req->Equipo2;    
+            $resultado->id_partido = $req->id_partido;  
+            $resultado->save();    
+
+            $partido = Partido::where('id',$req->id_partido)->first();            
+            $partido->estado = 0;
+            $partido->save();
+
+            $pronosticos = Pronostico::where('id_partido',$req->id_partido)->get();
+            foreach ($pronosticos as $key => $value) {
+                $puntos = 0;
+                if($value->goles_equipo_1 == $req->Equipo1 && $value->goles_equipo_2 == $req->Equipo2){
+                    $puntos =  5;
+                }elseif($value->goles_equipo_1 > $value->goles_equipo_2 && $req->Equipo1 > $req->Equipo2){
+                    $puntos =  3;
+                }elseif($value->goles_equipo_1 <$value->goles_equipo_2 && $req->Equipo1 < $req->Equipo2){
+                    $puntos =  3;
+                }elseif($value->goles_equipo_1 == $value->goles_equipo_2 && $req->Equipo1 == $req->Equipo2){
+                    $puntos =  3;
+                }else{
+                    $puntos =  0;
+                }   
+                
+                $prode = Prode::where('id', $value->id_prode)->where('estado', 1)->first();
+                $prode->puntaje += $puntos;
+
+                $prode->save();    
+                
+                $detalle_prode = new DetalleProde();
+                $detalle_prode->puntos = $puntos;
+                $detalle_prode->id_prode = $value->id_prode;
+                $detalle_prode->id_resultado = $resultado->id;
+
+                $detalle_prode->save();
+
+            }            
+
+            $message = 'El resultado del partido se cargo correctamente.';                  
+            return redirect()->route('resultados')->with('message', $message);
+        }        
     }
 }

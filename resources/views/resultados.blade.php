@@ -21,10 +21,12 @@
             <div class="col-md"></div>    
            
         </div>  
+        <form action="{{ route('resultado') }}" method="POST">
+        @csrf
         <div class="row">
             <div class="col-md"></div>
             <div class="col-12 col-md-4">
-                <select class="custom-select">
+                <select class="custom-select" name="id_partido">
                     <option value="0" selected>-Seleccione el partido-</option>                   
                     @foreach ($partidos as $partido)   
                         @php                                                
@@ -42,10 +44,10 @@
             <div class="col-12 col-md-4">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <input placeholder="Equipo 1" type="number" style="width: 100%" name="Equipo1" value="{{ old('Equipo1') }}">
+                        <input placeholder="Equipo 1" type="number" style="width: 100%" name="Equipo1" value="{{ old('Equipo1') }}" required>
                     </div>
                     <div class="col-12 col-md-6">
-                        <input placeholder="Equipo 2" type="number" style="width: 100%" name="Equipo1" value="{{ old('Equipo1') }}">
+                        <input placeholder="Equipo 2" type="number" style="width: 100%" name="Equipo2" value="{{ old('Equipo2') }}" required>
                     </div>
                 </div>
             </div>
@@ -55,11 +57,12 @@
         <div class="row">
             <div class="col-md"></div>
             <div class="col-12 col-md-4">
-                <button class="btn btn-block text-center textohome btn-primary">Guardar partido</button>
+                <button type="submit" class="btn btn-block text-center textohome btn-primary">Guardar partido</button>
             </div>
             <div class="col-md"></div>
         </div>
         <br>
+        </form>
         <hr>    
         <div class="row">
             <div class="col-md"></div>
@@ -111,6 +114,18 @@
             </div>
             <div class="col-md"></div>
         </div>
+
+        @if(session('message'))
+            <script>
+              Swal.fire('Guardado','<?= session("message"); ?>','success');
+            </script>
+        @endif
+
+        @if(session('messageError'))
+            <script>
+              Swal.fire('Seleccione un partido','<?= session("messageError"); ?>','warning');
+            </script>
+        @endif
 
         @yield('footer', View('footer'))
     </body>
