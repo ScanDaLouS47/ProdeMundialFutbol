@@ -55,7 +55,8 @@ Route::get('fixture', function () {
 })->middleware('auth')->name('fixture');
 
 Route::get('ranking', function () {
-    return view('ranking');
+    $prodes = Prode::orderBy('puntaje', 'desc')->paginate(10);
+    return view('ranking', ['prodes' => $prodes]);
 })->middleware('auth')->name('ranking');
 
 Route::get('perfil', function () {

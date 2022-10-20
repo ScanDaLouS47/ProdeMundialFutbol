@@ -22,7 +22,18 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  @foreach ($prodes as $key => $prode)     
+                    <tr>
+                      @if (($key + 1) == 1)
+                        <th scope="row" class="text-center"><img src="/img/puesto.png" alt=""></th>
+                      @else
+                        <th scope="row" class="text-center">{{ $key + 1 }}</th>
+                      @endif
+                      <td>{{ $prode->usuario->name }}</td>
+                      <td class="text-center">{{ $prode->puntaje }}</td>
+                    </tr>
+                  @endforeach
+                  {{-- <tr>
                     <th scope="row" class="text-center"><img src="/img/puesto.png" alt=""></th>
                     <td>Marcos Vela</td>
                     <td class="text-center">30</td>
@@ -71,7 +82,7 @@
                     <th scope="row" class="text-center">10</th>
                     <td>Julio Picapiedra</td>
                     <td class="text-center">5</td>
-                  </tr>
+                  </tr> --}}
                 </tbody>
               </table></div>
             <div class="col-md"></div>
