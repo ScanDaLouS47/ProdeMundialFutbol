@@ -51,4 +51,18 @@ class ProdeController extends Controller
         }
         
     }
+
+    public function modify($id){
+        $pronosticos = Pronostico::where('id_prode',$id)->orderBy('id_partido')->get();
+        return $pronosticos;
+    }
+
+    public function cambiar(Request $req){
+        $pronostico = Pronostico::where('id_prode', $req->id_prode)->where('id_partido', $req->id_partido)->first();
+        $pronostico->goles_equipo_1 = $req->goles_equipo_1;
+        $pronostico->goles_equipo_2 = $req->goles_equipo_2;
+        $pronostico->save();
+        $message = 'Se actualizo el pronostico.';
+        return redirect()->route('prode')->with('messagepron', $message);        
+    }
 }

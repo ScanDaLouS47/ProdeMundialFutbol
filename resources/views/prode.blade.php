@@ -18,7 +18,7 @@
                     <div class="alert alert-danger">
                         <ul>
                             <li style="margin-left: 2%;">
-                                <p>Debe completar todos los partidos de todos los grupos. {{ $errors }}</p>
+                                <p>Debe completar todos los partidos de todos los grupos.</p>
                             </li>
                         </ul>                        
                     </div>
@@ -988,7 +988,7 @@
                                         <h5><span class="badge badge-pill badge-success">aprobado</span></h5>
                                     @endif
                                 </td>
-                                <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-pen-to-square" onclick="btnEdit()"></i></h5></td>
+                                <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-pen-to-square mostrarProde" data-toggle="modal" data-target="#exampleModal" aria-controls="{{ $item->id }}"></i></h5></td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -998,6 +998,56 @@
             <div class="col-md-1"></div>            
         </div>
         <br>
+        <!-- Scrollable modal -->
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modificar prode</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {{-- @if ($pronosticos)
+                            <p>Existe</p>
+                        @else
+                            <p>No existe</p>
+                        @endif --}}
+                        @foreach ($partidos as $partido)
+                        <form action="{{ route('modpronostico') }}" method="POST">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-2">                                        
+                                    <img class="imgBandera" src="img/banderas/{{ $partido->equipo_1->imagen }}" alt="">
+                                </div>
+                                <div class="col-md-3">                                        
+                                    <input class="golesResultado" type="number" name="goles_equipo_1" id="mp-{{ $partido->id }}-1">
+                                </div>
+                                <div class="col-md-3">                                        
+                                    <input class="golesResultado" type="number" name="goles_equipo_2" id="mp-{{ $partido->id }}-2">
+                                </div>
+                                <div class="col-md-2">                                        
+                                    <img class="imgBandera" src="img/banderas/{{ $partido->equipo_2->imagen }}" alt="">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="hidden" name="id_partido" id="id_partido" value="{{ $partido->id }}">                                          
+                                    <input type="hidden" name="id_prode" value="0">
+                                    <button class="btn btn-info btn-block btnCambiar" type="submit">Cambiar</button>                                    
+                                </div>
+                            </div>    
+                        </form>
+                            <br>                        
+                        @endforeach
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         @if(session('resp') == 'ok')
           <script>
@@ -1013,11 +1063,42 @@
             </script>
         @endif
 
+        @if(session('messagepron'))
+            <script>
+              Swal.fire('<?= session("messagepron"); ?>','El pronostico del partido se modifico correctamente.','success');
+            </script>
+        @endif
+
         <script>
             const btnEdit = () => {
                 Swal.fire('','Esta función esta en proceso de desarrollo. Disculpe las molestias.','info');
             }
+
+            $(".mostrarProde").on('click', function (e) {
+                let id = $(this).attr("aria-controls");
+                
+                $.ajax({
+                    type: "GET",
+                    url: 'modprode/'+id,
+                    success: function(data) {
+                        console.log(data); 
+                        data.forEach(element => {                            
+                            $("#mp-"+element.id_partido+"-1").val(element.goles_equipo_1);                            
+                            $("#mp-"+element.id_partido+"-2").val(element.goles_equipo_2);
+                            $("[name='id_prode']").val(element.id_prode);
+                            // console.log(element);
+                        });                       
+                    },
+                    error: function (error) { 
+                        console.log(error);                         
+                    }
+                });
+            });
         </script>
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  crossorigin="anonymous"></script>        
             
         @yield('footer', View('footer'))
     </body>

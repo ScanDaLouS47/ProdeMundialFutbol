@@ -36,7 +36,8 @@ Route::get('login', function () {
 
 Route::get('prode', function () {
     $prodes = Prode::where('id_usuario','=', auth()->user()->id)->get();
-    return view('prode', ['prodes' => $prodes]);
+    $partidos = Partido::orderBy('id')->get();
+    return view('prode', ['prodes' => $prodes, 'partidos' => $partidos]);
 })->middleware('auth')->name('prode');
 
 Route::get('fixture', function () {
@@ -86,6 +87,10 @@ Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.sto
 Route::post('login', [LoginController::class, 'index'])->name('login.index');
 
 Route::post('prode', [ProdeController::class, 'index'])->middleware('auth')->name('prode.index');
+
+Route::get('modprode/{id}', [ProdeController::class, 'modify'])->middleware('auth');
+
+Route::post('modpronostico', [ProdeController::class, 'cambiar'])->middleware('auth')->name('modpronostico');
 
 
 Route::get('logout', function () {
