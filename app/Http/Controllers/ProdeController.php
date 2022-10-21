@@ -116,4 +116,13 @@ class ProdeController extends Controller
             return redirect()->route('resultados')->with('message', $message);
         }        
     }
+
+    public function aprobar($id){
+        $prode = Prode::where('id', $id)->first();
+        $prode->estado = 1;
+        $prode->save();
+
+        $message = 'El prode se aprobo correctamente.';        
+        return redirect()->route('usuarios.index')->with('message', $message);
+    }
 }

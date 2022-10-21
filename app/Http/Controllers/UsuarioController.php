@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 // use App\Models\Usuario;
+
+use App\Models\Prode;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -9,7 +11,7 @@ class UsuarioController extends Controller
 {
 
     public function index(){        
-        $usuarios = User::orderBy('id', 'desc')->paginate();
+        $usuarios = User::orderBy('id', 'desc')->paginate();        
         return view('usuarios', compact('usuarios'));
     }
 
@@ -34,4 +36,18 @@ class UsuarioController extends Controller
         // echo var_dump($usuario);
         return redirect()->route('prode');              
     }
+
+    public function modify($id){
+        $prodes = Prode::where('id_usuario',$id)->orderBy('fecha_carga')->get();
+        return $prodes;
+    }
+
+    // public function cambiar(Request $req){
+    //     $pronostico = Pronostico::where('id_prode', $req->id_prode)->where('id_partido', $req->id_partido)->first();
+    //     $pronostico->goles_equipo_1 = $req->goles_equipo_1;
+    //     $pronostico->goles_equipo_2 = $req->goles_equipo_2;
+    //     $pronostico->save();
+    //     $message = 'Se actualizo el pronostico.';
+    //     return redirect()->route('prode')->with('messagepron', $message);        
+    // }
 }

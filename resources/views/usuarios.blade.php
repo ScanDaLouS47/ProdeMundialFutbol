@@ -28,50 +28,97 @@
               <tr>
                 <th scope="col">Usuario</th>
                 <th scope="col">Nombre y Apellido</th>
-                <th scope="col">Dni</th>
-                <th scope="col">Cantidad de Prodes</th>
-                <th scope="col">Modificar</th>
+                <th scope="col">Dni</th>                
+                <th scope="col" class="text-center">Modificar</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Marcos Gil</td>
-                <td>35893816</td>
-                <td>1</td>
-                <td><i class="fa fa-user-edit"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob Vagio</td>
-                <td>23987357</td>
-                <td>2</td>
-                <td><i class="fa fa-user-edit"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Vanesa Rosso</td>
-                <td>16893835</td>
-                <td>1</td>
-                <td><i class="fa fa-user-edit"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Julio Vignolo</td>
-                <td>35987357</td>
-                <td>3</td>
-                <td><i class="fa fa-user-edit"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Carlos Beltran</td>
-                <td>15369896</td>
-                <td>1</td>
-                <td><i class="fa fa-user-edit"></i></td>
-              </tr>
+              @foreach ($usuarios as $usuario)       
+                <tr>
+                  <th scope="row">{{ $usuario->id }}</th>
+                  <td>{{ $usuario->name }}</td>
+                  <td>{{ $usuario->dni }}</td>                  
+                  <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-user-edit mostrarUsuario" data-toggle="modal" data-target="#modUsuarioModal" aria-controls="{{ $usuario->id }}"></i></h5></td>
+                </tr>                                 
+                  <br>                        
+              @endforeach
             </tbody>
           </table>
           <hr>
+          <!-- Scrollable modal -->
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal fade" id="modUsuarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Activar prodes</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table" id="tablaProdes">
+                        <thead>
+                          <tr>                            
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Aprobar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @if(session('message'))
+            <script>
+              Swal.fire('Correcto','<?= session("message"); ?>','success');
+            </script>
+        @endif
+
+        <script>
+          $(".mostrarUsuario").on('click', function (e) {
+                let id = $(this).attr("aria-controls");
+                
+                $.ajax({
+                    type: "GET",
+                    url: 'modusuario/'+id,
+                    success: function(data) {
+                        console.log(data); 
+                        data.forEach(element => {  
+                          let fechaCarga = element.fecha_carga.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
+                          let estadoBtn = 'disabled';
+                          let etEstado = '<h5><span class="badge badge-pill badge-success">aprobado</span></h5>';
+                          if(element.estado === 0){
+                            estadoBtn = 'enabled';
+                            etEstado = '<h5><span class="badge badge-pill badge-danger">validando</span></h5>';
+                          }
+                          var htmlTags = '<tr>'+
+                            '<td>' + fechaCarga + '</td>'+
+                            '<td>' + etEstado + '</td>'+
+                            '<td><button class="btn btn-primary" '+estadoBtn+' onclick="window.location.href=\'aprobarestado/'+element.id+'\'"><i class="fa fa-check"></i></button></td>'+                            
+                          '</tr>';       
+                            $("#tablaProdes tbody").append(htmlTags);                                             
+                        });                       
+                    },
+                    error: function (error) { 
+                        console.log(error);                         
+                    }
+                });
+            });
+        </script>
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  crossorigin="anonymous"></script>      
 
         @yield('footer', View('footer'))
 

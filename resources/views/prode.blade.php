@@ -1010,11 +1010,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        {{-- @if ($pronosticos)
-                            <p>Existe</p>
-                        @else
-                            <p>No existe</p>
-                        @endif --}}
                         @foreach ($partidos as $partido)
                         <form action="{{ route('modpronostico') }}" method="POST">
                             @csrf

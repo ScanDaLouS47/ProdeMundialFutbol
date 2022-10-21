@@ -94,6 +94,10 @@ Route::get('modprode/{id}', [ProdeController::class, 'modify'])->middleware('aut
 
 Route::post('modpronostico', [ProdeController::class, 'cambiar'])->middleware('auth')->name('modpronostico');
 
+Route::get('modusuario/{id}', [UsuarioController::class, 'modify'])->middleware('auth');
+
+Route::get('aprobarestado/{id}', [ProdeController::class, 'aprobar'])->middleware('auth');
+
 
 Route::get('logout', function () {
     Auth::logout();
