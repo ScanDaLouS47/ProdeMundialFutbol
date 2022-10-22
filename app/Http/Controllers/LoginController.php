@@ -31,7 +31,11 @@ class LoginController extends Controller
                     $usuario = User::where('dni', $req->dni)->where('password', md5($req->password))->first(); 
                     if($usuario){  
                         Auth::login($usuario);
-                        return redirect()->route('prode');  
+                        if($usuario->id === 1){
+                            return redirect()->route('admin');
+                        }else{
+                            return redirect()->route('prode');  
+                        }
                     }else{
                         $message = 'El dni o contraseña no son correctos';
                         return redirect()->route('login')->with('message', $message);

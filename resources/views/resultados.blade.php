@@ -84,31 +84,24 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Argentina</td>
-                        <td>Polonia</td>
-                        <td>Argentina(3-2)</td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Francia</td>
-                        <td>Dinamarca</td>
-                        <td>Francia(3-2)</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Brazil</td>
-                        <td>Suiza</td>
-                        <td>Brazil(2-1)</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Brazil</td>
-                        <td>Camerun</td>
-                        <td>Brazil(3-1)</td>
-                      </tr>
+                        @foreach ($resultados as $resultado)
+                        @php
+                            $winner = '';
+                            if($resultado->goles_equipo_1 > $resultado->goles_equipo_2){
+                                $winner = $resultado->partido->equipo_1->nombre_equipo." (".$resultado->goles_equipo_1."-".$resultado->goles_equipo_2.")";
+                            }elseif($resultado->goles_equipo_1 < $resultado->goles_equipo_2){
+                                $winner = $resultado->partido->equipo_2->nombre_equipo." (".$resultado->goles_equipo_2."-".$resultado->goles_equipo_1.")";
+                            }else{
+                                $winner = "Empate (".$resultado->goles_equipo_1."-".$resultado->goles_equipo_2.")";
+                            }
+                        @endphp
+                          <tr>
+                            <th>{{ $resultado->id }}</th>
+                            <td>{{ $resultado->partido->equipo_1->nombre_equipo }}</td>
+                            <td>{{ $resultado->partido->equipo_2->nombre_equipo }}</td>
+                            <td>{{ $winner }}</td>                            
+                          </tr>
+                        @endforeach
                     </tbody>
                   </table>
             </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\ProdeController;
 use App\Models\Equipo;
 use App\Models\Partido;
 use App\Models\Prode;
+use App\Models\Resultado;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -70,19 +71,20 @@ Route::get('olvidepass', function () {
 
 Route::get('admin', function () {
     return view('admin');
-})->middleware('auth')->name('admin');
+})->middleware('auth', 'admin')->name('admin');
 
 Route::get('resultados', function () {
     $hoy = date('Y-m-d');
     $partidos = Partido::where('fecha','>=', $hoy)->where('estado',1)->orderBy('fecha')->get();
-    return view('resultados', ['partidos' => $partidos]);    
-})->middleware('auth')->name('resultados');
+    $resultados = Resultado::orderBy('id')->get();
+    return view('resultados', ['partidos' => $partidos, 'resultados' => $resultados]);    
+})->middleware('auth','admin')->name('resultados');
 
 Route::post('resultado', [ProdeController::class, 'cargaresultado'])->middleware('auth')->name('resultado');
 
 Route::post('olvidepass', [OlvidePassController::class, 'olvidepass'])->name('olvidepass');
 
-Route::get('usuarios', [UsuarioController::class, 'index'])->middleware('auth')->name('usuarios.index');
+Route::get('usuarios', [UsuarioController::class, 'index'])->middleware('auth','admin')->name('usuarios.index');
 
 Route::post('usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
 
