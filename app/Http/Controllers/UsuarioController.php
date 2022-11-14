@@ -16,19 +16,28 @@ class UsuarioController extends Controller
     }
 
     public function store(Request $req){
-        $usuario = new User();
 
-        $usuario->name = $req->nombre;
-        $usuario->dni = $req->dni;
-        $usuario->telefono = $req->telefono;
-        $usuario->password = md5($req->password);
-        $usuario->puntaje = 0;
-        $usuario->estado = 1;
-        
-        // $message = 'asd';
-        $usuario->save() ? $resp = 'ok' : $resp = 'not';                 
+        $busUser = User::where('dni', $req->dni)->first();
 
-        return redirect()->route('login')->with('resp',$resp);
+        if($busUser){
+            $resp = 'existedni';
+            return redirect()->route('registro')->with('resp',$resp);
+        }else{
+            $usuario = new User();
+    
+            $usuario->name = $req->nombre;
+            $usuario->dni = $req->dni;
+            $usuario->telefono = $req->telefono;
+            $usuario->password = md5($req->password);
+            $usuario->puntaje = 0;
+            $usuario->estado = 1;
+            
+            // $message = 'asd';
+            $usuario->save() ? $resp = 'ok' : $resp = 'not';                 
+    
+            return redirect()->route('login')->with('resp',$resp);
+        }
+
     }
 
     public function login(Request $req){

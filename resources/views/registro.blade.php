@@ -50,6 +50,12 @@
             </div>
             <div class="col-md"></div>            
         </div>
+
+        @if(session('resp') == 'existedni')
+          <script>
+            Swal.fire('Ya existe un usuario registrado con ese DNI');
+          </script>
+        @else
         
 
             

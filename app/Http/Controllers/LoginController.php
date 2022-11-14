@@ -31,7 +31,7 @@ class LoginController extends Controller
                     $usuario = User::where('dni', $req->dni)->where('password', md5($req->password))->first(); 
                     if($usuario){  
                         Auth::login($usuario);
-                        if($usuario->id === 1){
+                        if($usuario->id == 1){
                             return redirect()->route('admin');
                         }else{
                             return redirect()->route('prode');  
