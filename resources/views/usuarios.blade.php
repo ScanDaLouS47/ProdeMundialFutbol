@@ -39,8 +39,7 @@
                   <td>{{ $usuario->name }}</td>
                   <td>{{ $usuario->dni }}</td>                  
                   <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-user-edit mostrarUsuario" data-toggle="modal" data-target="#modUsuarioModal" aria-controls="{{ $usuario->id }}"></i></h5></td>
-                </tr>                                 
-                  <br>                        
+                </tr>                                                        
               @endforeach
             </tbody>
           </table>
