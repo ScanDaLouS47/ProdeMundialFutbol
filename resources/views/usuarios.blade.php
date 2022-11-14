@@ -15,11 +15,11 @@
          </div>   
          <br>        
         <p class="text-center textohome">Usuarios registrados</p>     
-        <ul>                
+        {{-- <ul>                
             @foreach ($usuarios as $usuario)
                 <li>{{ $usuario->nombre }}</li>
             @endforeach
-        </ul>
+        </ul> --}}
         @if(session('resp'))
             <p>El mensaje es : {{ session('message') }}</p>        
         @endif
