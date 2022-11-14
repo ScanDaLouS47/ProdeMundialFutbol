@@ -55,7 +55,7 @@
           <script>
             Swal.fire('Ya existe un usuario registrado con ese DNI');
           </script>
-        @else
+        @endif
         
 
             
