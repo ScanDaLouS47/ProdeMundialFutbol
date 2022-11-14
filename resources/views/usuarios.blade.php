@@ -44,6 +44,13 @@
               @endforeach
             </tbody>
           </table>
+          <div class="row">
+            <div class="col-12 offset-md-2 col-md-8">
+                <div class="d-flex justify-content-center pagination-sm">
+                    {!! $usuarios->links() !!}
+                </div>
+            </div>
+        </div>
           <hr>
           <!-- Scrollable modal -->
         <div class="modal-dialog modal-dialog-scrollable">
