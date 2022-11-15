@@ -16,32 +16,19 @@ class LoginController extends Controller
 
         try {
             $usuarioregistrado = User::where('dni', $req->dni)->first();            
-            if($usuarioregistrado){                
-                $olvidepass = OlvidePass::where([['id_usuario','=', $usuarioregistrado->id],['estado','=', 1]])->first();                               
-                if($olvidepass){                                        
-                    if($olvidepass->codigo == $req->password){
-                        $usuarioregistrado->update(['password' => md5($olvidepass->password)]);
-                        $olvidepass->update(['estado' => 0]);
-                        return redirect()->route('home');
+            if($usuarioregistrado){                                                    
+                $usuario = User::where('dni', $req->dni)->where('password', md5($req->password))->first(); 
+                if($usuario){  
+                    Auth::login($usuario);
+                    if($usuario->id == 1){
+                        return redirect()->route('admin');
                     }else{
-                        $message = 'El codigo temporal de acceso no es correcto';
-                        return redirect()->route('login')->with('message', $message);
+                        return redirect()->route('prode');  
                     }
-                }else{                    
-                    $usuario = User::where('dni', $req->dni)->where('password', md5($req->password))->first(); 
-                    if($usuario){  
-                        Auth::login($usuario);
-                        if($usuario->id == 1){
-                            return redirect()->route('admin');
-                        }else{
-                            return redirect()->route('prode');  
-                        }
-                    }else{
-                        $message = 'El dni o contraseña no son correctos';
-                        return redirect()->route('login')->with('message', $message);
-                    }
-                }
-
+                }else{
+                    $message = 'El dni o contraseña no son correctos';
+                    return redirect()->route('login')->with('message', $message);
+                }                
             }else{
                 $message = 'No existe usuario registrado con ese dni';
                 return redirect()->route('login')->with('message', $message);

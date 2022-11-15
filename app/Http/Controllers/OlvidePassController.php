@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Usuario;
 use App\Models\OlvidePass;
 use Illuminate\Http\Request;
@@ -26,23 +27,30 @@ class OlvidePassController extends Controller
 
     public function olvidepass(Request $req){
         try {
-            $usuario = Usuario::where('dni',$req->dni)->first();
+            $usuario = User::where('dni',$req->dni)->first();
             if($usuario){     
-                $codigo = rand(0, 9999);    
-                
-                $olvidepass = new OlvidePass();
 
-                $olvidepass->codigo = $codigo;
-                $olvidepass->id_usuario = $usuario->id;
-                $olvidepass->password = $req->nuevaPass;
-                $olvidepass->estado = 1;
-                                
-                $olvidepass->save();      
-                
-                $telefono = $usuario->telefono;
+                $usuario->password = md5($req->nuevaPass);
 
-                $texto = 'Su contraseña temporal es: '.$codigo;
-                return redirect('https://api.whatsapp.com/send?phone=549'.$telefono.'&text='.$texto);
+                $usuario->save();
+
+                $message = 'Su password ha sido cambiado correctamente.';
+                return redirect()->route('olvidepass')->with('message',$message);
+                // $codigo = rand(0, 9999);    
+                
+                // $olvidepass = new OlvidePass();
+
+                // $olvidepass->codigo = $codigo;
+                // $olvidepass->id_usuario = $usuario->id;
+                // $olvidepass->password = $req->nuevaPass;
+                // $olvidepass->estado = 1;
+
+                // $olvidepass->save();      
+                
+                // $telefono = $usuario->telefono;
+
+                // $texto = 'Su contraseña temporal es: '.$codigo;
+                // return redirect('https://api.whatsapp.com/send?phone=549'.$telefono.'&text='.$texto);
             }else{
                 $message = 'No existe ningun usuario registrado con ese dni';
                 return redirect()->route('olvidepass')->with('message',$message);

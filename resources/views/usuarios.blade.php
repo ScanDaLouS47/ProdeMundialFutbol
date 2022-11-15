@@ -50,7 +50,8 @@
                 </div>
             </div>
         </div>
-          <hr>
+        <hr>                
+
           <!-- Scrollable modal -->
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal fade" id="modUsuarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
