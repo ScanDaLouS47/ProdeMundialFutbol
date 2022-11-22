@@ -83,7 +83,9 @@ class ProdeController extends Controller
             $partido->estado = 0;
             $partido->save();
 
-            $pronosticos = Pronostico::where('id_partido',$req->id_partido)->get();
+            // $pronosticos = Pronostico::where('id_partido',$req->id_partido)->get();
+            $pronosticos = Pronostico::all()->where('id_partido',$req->id_partido);
+
             foreach ($pronosticos as $key => $value) {
                 $puntos = 0;
                 if($value->goles_equipo_1 == $req->Equipo1 && $value->goles_equipo_2 == $req->Equipo2){

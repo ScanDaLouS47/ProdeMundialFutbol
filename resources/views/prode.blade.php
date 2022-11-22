@@ -988,7 +988,7 @@
                                         <h5><span class="badge badge-pill badge-success">aprobado</span></h5>
                                     @endif
                                 </td>
-                                <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-pen-to-square mostrarProde" data-toggle="modal" data-target="#exampleModal" aria-controls="{{ $item->id }}"></i></h5></td>
+                                <td class="text-center"><h5><i style="cursor: pointer;" class="fa-solid fa-eye mostrarProde" data-toggle="modal" data-target="#exampleModal" aria-controls="{{ $item->id }}"></i></h5></td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -1004,7 +1004,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modificar prode</h5>
+                        <h5 class="modal-title">Ver prode</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -1017,20 +1017,20 @@
                                 <div class="col-md-2">                                        
                                     <img class="imgBandera" src="img/banderas/{{ $partido->equipo_1->imagen }}" alt="">
                                 </div>
-                                <div class="col-md-3">                                        
-                                    <input class="golesResultado" type="number" name="goles_equipo_1" id="mp-{{ $partido->id }}-1">
+                                <div class="col-md-4">                                        
+                                    <input class="golesResultado" type="number" name="goles_equipo_1" id="mp-{{ $partido->id }}-1" readonly>
                                 </div>
-                                <div class="col-md-3">                                        
-                                    <input class="golesResultado" type="number" name="goles_equipo_2" id="mp-{{ $partido->id }}-2">
+                                <div class="col-md-4">                                        
+                                    <input class="golesResultado" type="number" name="goles_equipo_2" id="mp-{{ $partido->id }}-2" readonly>
                                 </div>
                                 <div class="col-md-2">                                        
                                     <img class="imgBandera" src="img/banderas/{{ $partido->equipo_2->imagen }}" alt="">
                                 </div>
-                                <div class="col-md-2">
+                                {{-- <div class="col-md-2">
                                     <input type="hidden" name="id_partido" id="id_partido" value="{{ $partido->id }}">                                          
                                     <input type="hidden" name="id_prode" value="0">
                                     <button class="btn btn-info btn-block btnCambiar" type="submit">Cambiar</button>                                    
-                                </div>
+                                </div> --}}
                             </div>    
                         </form>
                             <br>                        
