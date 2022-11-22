@@ -42,7 +42,7 @@ Route::get('prode', function () {
 })->middleware('auth')->name('prode');
 
 Route::get('fixture', function () {
-    $partidos = Partido::paginate(5);
+    $partidos = Partido::orderBy('fecha', 'asc')->paginate(5);
     // var_dump($partidos);    
     // $partidos = $partidos->equipo_2();
     // dd($partidos); 

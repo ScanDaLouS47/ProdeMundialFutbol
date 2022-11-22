@@ -13,9 +13,9 @@
         @foreach ($partidos as $partido)                    
             @php                                                
                 $fecha = explode("-",$partido->fecha);
-                $hoy = Carbon\Carbon::now();            
+                // $hoy = Carbon\Carbon::now();            
             @endphp            
-            @if ($partido->fecha > $hoy)                
+            @if ($partido->estado !== 0)                
                 <div class="row partidosProde">
                     <div class="col-md"></div>
                     <div class="col-12 col-md-8 bg-danger titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
@@ -67,7 +67,7 @@
             @else
                 <div class="row partidosProde">
                     <div class="col-md"></div>
-                    <div class="col-12 col-md-8 bg-success titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->estadio()->nombre_estadio }} | {{ $partido->hora }} hs</div>
+                    <div class="col-12 col-md-8 bg-success titulosFixture card-header">{{ $fecha[2]."-".$fecha[1]."-".$fecha[0] }} | {{ $partido->hora }} hs</div>
                     <div class="col-md"></div>
                 </div> 
                 <div class="row partidosProde">
