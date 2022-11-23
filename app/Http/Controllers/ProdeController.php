@@ -88,6 +88,8 @@ class ProdeController extends Controller
             
             echo count($pronosticos);
 
+            echo "<br>";
+
             foreach ($pronosticos as $key => $value) {
                 $puntos = 0;
 
@@ -110,12 +112,12 @@ class ProdeController extends Controller
                     $puntos =  0;
                     echo "ENTRA EN 0";
                 }   
-                echo "<br>";
-                echo "------------------------";
-                echo "<br>";
+                echo "<br>";                
                 
                 $prode = Prode::where('id', $value->id_prode)->where('estado', 1)->first();
                 echo $prode;
+                echo "------------------------";
+                echo "<br>";
                 // $prode->puntaje += $puntos;
 
                 // $prode->save();    
