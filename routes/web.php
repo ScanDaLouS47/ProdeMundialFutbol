@@ -74,7 +74,7 @@ Route::get('admin', function () {
 })->middleware('auth', 'admin')->name('admin');
 
 Route::get('resultados', function () {    
-    $partidos = Partido::where('estado',1)->orderBy('fecha')->get();
+    $partidos = Partido::where('estado',1)->orderBy('fecha')->orderBy('hora')->get();
     $resultados = Resultado::orderBy('id')->get();
     return view('resultados', ['partidos' => $partidos, 'resultados' => $resultados]);    
 })->middleware('auth','admin')->name('resultados');

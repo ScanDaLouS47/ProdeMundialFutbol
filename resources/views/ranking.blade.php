@@ -11,6 +11,12 @@
         @yield('menu', View('menu'))  
         <br>             
         <div class="row">
+          <div class="col-12 offset-md-3 col-md-6 bg-info">
+              <p>Estamos concientes de problemas en la carga de los puntos. El problema ya fue solucionado le pedimos disculpas a los usuarios y gracias por saber entender.</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
             <div class="col-md"></div>
             <div class="col-md-8"><div class="col-md-12 bg-success tituloGrupos">RANKING</div>
             <table class="table table-striped table-dark">
