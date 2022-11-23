@@ -73,66 +73,77 @@ class ProdeController extends Controller
             $messageError = 'Debe seleccionar un partido.';
             return redirect()->route('resultados')->with('messageError', $messageError);  
         }else{
-            // $resultado = new Resultado();
-            // $resultado->goles_equipo_1 = $req->Equipo1;
-            // $resultado->goles_equipo_2 = $req->Equipo2;    
-            // $resultado->id_partido = $req->id_partido;  
-            // $resultado->save();    
+            $resultado = new Resultado();
+            $resultado->goles_equipo_1 = $req->Equipo1;
+            $resultado->goles_equipo_2 = $req->Equipo2;    
+            $resultado->id_partido = $req->id_partido;  
+            $resultado->save();    
 
-            // $partido = Partido::where('id',$req->id_partido)->first();            
-            // $partido->estado = 0;
-            // $partido->save();
+            $partido = Partido::where('id',$req->id_partido)->first();            
+            $partido->estado = 0;
+            $partido->save();
 
             $pronosticos = Pronostico::where('id_partido',$req->id_partido)->get();
             // $pronosticos = Pronostico::all()->where('id_partido',$req->id_partido);  
             
-            echo count($pronosticos);
+            // DEBUG
+            // echo count($pronosticos);
 
-            echo "<br>";
+            // echo "<br>";
 
             foreach ($pronosticos as $key => $value) {
                 $puntos = 0;
 
-                echo $value->goles_equipo_1." ".$value->goles_equipo_2;
-                echo "<br>";                
+                // DEBUG
+                // echo $value->goles_equipo_1." ".$value->goles_equipo_2;
+                // echo "<br>";                
 
                 if($value->goles_equipo_1 == $req->Equipo1 && $value->goles_equipo_2 == $req->Equipo2){
                     $puntos =  5;
-                    echo "ENTRA EN 5";
+                    // DEBUG
+                    // echo "ENTRA EN 5";
                 }elseif($value->goles_equipo_1 > $value->goles_equipo_2 && $req->Equipo1 > $req->Equipo2){
                     $puntos =  3;
-                    echo "ENTRA EN 3 ATINO";
+                    // DEBUG
+                    // echo "ENTRA EN 3 ATINO";
                 }elseif($value->goles_equipo_1 < $value->goles_equipo_2 && $req->Equipo1 < $req->Equipo2){
                     $puntos =  3;
-                    echo "ENTRA EN 3 ATINO";
+                    // DEBUG
+                    // echo "ENTRA EN 3 ATINO";
                 }elseif($value->goles_equipo_1 == $value->goles_equipo_2 && $req->Equipo1 == $req->Equipo2){
                     $puntos =  3;
-                    echo "ENTRA EN 3 EMPATE";
+                    // DEBUG
+                    // echo "ENTRA EN 3 EMPATE";
                 }else{
                     $puntos =  0;
-                    echo "ENTRA EN 0";
-                }   
-                echo "<br>";                
+                    // DEBUG
+                    // echo "ENTRA EN 0";
+                }  
+                // DEBUG 
+                // echo "<br>";                
                 
                 $prode = Prode::where('id', $value->id_prode)->first();
-                echo $prode;
-                echo "------------------------";
-                echo "<br>";
-                // $prode->puntaje += $puntos;
 
-                // $prode->save();    
+                // DEBUG
+                // echo $prode;
+                // echo "------------------------";
+                // echo "<br>";
+
+                $prode->puntaje += $puntos;
+
+                $prode->save();    
                 
-                // $detalle_prode = new DetalleProde();
-                // $detalle_prode->puntos = $puntos;
-                // $detalle_prode->id_prode = $value->id_prode;
-                // $detalle_prode->id_resultado = $resultado->id;
+                $detalle_prode = new DetalleProde();
+                $detalle_prode->puntos = $puntos;
+                $detalle_prode->id_prode = $value->id_prode;
+                $detalle_prode->id_resultado = $resultado->id;
 
-                // $detalle_prode->save();
+                $detalle_prode->save();
 
             }            
 
-            // $message = 'El resultado del partido se cargo correctamente.';                  
-            // return redirect()->route('resultados')->with('message', $message);
+            $message = 'El resultado del partido se cargo correctamente.';                  
+            return redirect()->route('resultados')->with('message', $message);
         }        
     }
 
