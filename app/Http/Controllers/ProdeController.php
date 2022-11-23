@@ -114,7 +114,7 @@ class ProdeController extends Controller
                 }   
                 echo "<br>";                
                 
-                $prode = Prode::where('id', $value->id_prode)->where('estado', 1)->first();
+                $prode = Prode::where('id', $value->id_prode)->first();
                 echo $prode;
                 echo "------------------------";
                 echo "<br>";
