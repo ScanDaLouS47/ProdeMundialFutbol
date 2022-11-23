@@ -73,9 +73,8 @@ Route::get('admin', function () {
     return view('admin');
 })->middleware('auth', 'admin')->name('admin');
 
-Route::get('resultados', function () {
-    $hoy = date('Y-m-d');
-    $partidos = Partido::where('fecha','>=', $hoy)->where('estado',1)->orderBy('fecha')->get();
+Route::get('resultados', function () {    
+    $partidos = Partido::where('estado',1)->orderBy('fecha')->get();
     $resultados = Resultado::orderBy('id')->get();
     return view('resultados', ['partidos' => $partidos, 'resultados' => $resultados]);    
 })->middleware('auth','admin')->name('resultados');
