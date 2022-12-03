@@ -12,10 +12,10 @@ class DetalleProde extends Model
     public $timestamps = false;
 
     public function prode(){
-        return $this->belongsTo(Prode::class, 'id_prode','id');
+        return $this->belongsTo(Prode::class, 'id_prode');
     }
 
     public function resultado(){
-        return $this->belongsTo(Resultado::class, 'id_resultado','id');
+        return $this->belongsTo(Resultado::class, 'id_resultado');
     }
 }
