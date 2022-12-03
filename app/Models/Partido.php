@@ -21,7 +21,7 @@ class Partido extends Model
         return $this->belongsTo(Equipo::class,'id_equipo_2','id');
     }
 
-    public function resultado(){
-        return $this->hasOne(Resultado::class,'id_partido','id');
-    }
+    // public function resultado(){
+    //     return $this->hasOne(Resultado::class,'id_partido','id');
+    // }
 }
