@@ -24,7 +24,7 @@ return new class extends Migration
                     ->onDelete('set null');
 
             $table->foreign('id_resultado')
-                    ->references('id')->on('partidos')
+                    ->references('id')->on('resultados')
                     ->onDelete('set null');
 
         });
